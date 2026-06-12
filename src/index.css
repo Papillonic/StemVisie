@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basis instellingen */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Schermvullende achtergrond, blijft vast */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* voorkomt scrollen op body */
+}
+
+/* Body achtergrond afbeelding */
+body {
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+/* Scrollable content wrapper */
+/* Zorgt dat alleen content scrollt op alle schermen */
+.scrollable-content {
+  height: 100vh;        /* vult het volledige scherm */
+  overflow-y: auto;     /* scrollbare content */
+  -webkit-overflow-scrolling: touch; /* soepel scrollen op mobiel */
+  padding-top: env(safe-area-inset-top);  /* veilig voor notch op mobiel */
+  padding-bottom: env(safe-area-inset-bottom); 
+}
+
+/* Responsive padding voor tablets en mobiel */
+@media (max-width: 1024px) {
+  .scrollable-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .scrollable-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

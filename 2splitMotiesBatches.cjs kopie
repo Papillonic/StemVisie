@@ -1,0 +1,55 @@
+// splitMotiesBatches.cjs
+const fs = require("fs");
+const path = require("path");
+
+// 📂 Pad naar moties.ts
+const motiesPath = path.resolve(__dirname, "moties.ts");
+if (!fs.existsSync(motiesPath)) {
+  console.error("❌ moties.ts niet gevonden!");
+  process.exit(1);
+}
+
+// 1️⃣ moties.ts inlezen en JSON extraheren
+const tsContent = fs.readFileSync(motiesPath, "utf-8");
+const match = tsContent.match(/export const moties = (\[.*\]);/s);
+if (!match) {
+  console.error("❌ Kon moties-array niet vinden in moties.ts");
+  process.exit(1);
+}
+
+const moties = JSON.parse(match[1]);
+
+// 2️⃣ Batches maken
+const batchSize = 20;
+const batches = [];
+for (let i = 0; i < moties.length; i += batchSize) {
+  batches.push(moties.slice(i, i + batchSize));
+}
+
+// 3️⃣ Schrijf elke batch naar een bestand
+const outputDir = path.resolve(__dirname, "batches");
+if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+
+batches.forEach((batch, index) => {
+  const lines = batch.map(m => {
+    // volledige tekst zoeken in Kamerstukken of motie zelf
+    let fullText = "";
+    if (Array.isArray(m.Kamerstukken)) {
+      for (const ks of m.Kamerstukken) {
+        if (ks.PdfText) {
+          fullText = ks.PdfText;
+          break;
+        }
+      }
+    }
+    if (!fullText) fullText = m.Onderwerp || "";
+
+    return `=== MOTIE ${m.Id} ===\n${fullText}`;
+  });
+
+  const filename = path.join(outputDir, `moties_batch${index + 1}.txt`);
+  fs.writeFileSync(filename, lines.join("\n\n"), "utf-8");
+  console.log(`✅ Batch ${index + 1} geschreven: ${filename}`);
+});
+
+console.log(`\n🎉 Klaar! ${batches.length} batchbestanden aangemaakt in ${outputDir}`);

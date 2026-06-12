@@ -1,0 +1,19 @@
+export const PARTY_HOUSE_STYLES = {
+  VVD: "#0057D9",        // donkerblauw / VVD‑blauw
+  PVV: "#0088AA",        // donkerblauw uit vlag branding
+  D66: "#1ECC5B",        // frisgroen (iets lichter en feller dan #00B140)
+  GRO: "#9B5E1D",        // groen (standaard)
+  PvdA: "#FF0000",       // rood
+  SP: "#E30613",         // donkerrood
+  CDA: "#006B3F",        // heldergroen (iets lichter dan #00A050)
+  CHR: "#00AEEF",        // oranje-geel variant
+  SGP: "#F58220",        // geel-orange
+  PVD: "#0B7285",        // donkergroen
+  DEN: "#3AC0C3",        // paars (branding)
+  VOL: "#582C83",        // paars (Volt intern.)
+  JA2: "#4A5A8A",        // donkerblauw nuance
+  BBB: "#8FC751",        // lichtgroen (frisser dan #6FA940)
+  NSC: "#FFC72C",        // geel + accent
+  FVD: "#A54058",        // maroon/donkerrood
+  PLU: "#8B1E3F"    // rood/licht
+};

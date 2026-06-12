@@ -152,15 +152,11 @@ useEffect(() => {
     amendments: typeof mockAmendments,
     quickStartLabel?: string
   ) => {
-    posthog.capture({
-      distinctId: getDistinctId(),
-      event: 'voting session started',
-      properties: {
-        source: 'quick_start',
-        quick_start_label: quickStartLabel,
-        amendment_count: amendments.length,
-      },
-    });
+    posthog.capture('voting session started', {
+  source: 'quick_start',
+  quick_start_label: quickStartLabel,
+  amendment_count: amendments.length,
+});
     navigate("/voting", {
       state: {
         amendments,

@@ -90,9 +90,7 @@ if (!chamberLayout) return null;
 
 const [isMobile, setIsMobile] = useState(false);
 
-posthog.capture("motion_details_viewed", {
-  amendment_id: motion.id,
-});
+
 
 useEffect(() => {
   const check = () => setIsMobile(window.innerWidth < 768);
@@ -102,7 +100,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  posthog.capture('motion detail viewed', {
+  posthog.capture('motion_details_viewed', {
     amendment_id: current.id,
     amendment_title: current.title,
     amendment_index: index + 1,

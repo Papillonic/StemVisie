@@ -90,6 +90,10 @@ if (!chamberLayout) return null;
 
 const [isMobile, setIsMobile] = useState(false);
 
+posthog.capture("motion_details_viewed", {
+  amendment_id: motion.id,
+});
+
 useEffect(() => {
   const check = () => setIsMobile(window.innerWidth < 768);
   check();

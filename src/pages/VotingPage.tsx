@@ -160,7 +160,7 @@ useEffect(() => {
       { amendmentId: current.id, vote },
     ]);
 
-    posthog.capture('vote cast', {
+    posthog.capture('vote_cast', {
   vote,
   amendment_id: current.id,
   amendment_title: current.title,
@@ -184,7 +184,7 @@ useEffect(() => {
   const handleFinish = () => {
     localStorage.removeItem("voting_index");
 
-    posthog.capture('voting session completed', {
+    posthog.capture('voting_completed', {
   votes_cast: userVotes.length,
   total_amendments: amendments.length,
 });

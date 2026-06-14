@@ -163,7 +163,7 @@ useEffect(() => {
   if (userVotes.length > 0) {
     const topMatch = results[0];
 
-    posthog.capture('results viewed', {
+    posthog.capture('results_viewed', {
       votes_cast: userVotes.length,
       total_amendments: amendments.length,
       top_match_party: topMatch?.name,

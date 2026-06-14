@@ -23,6 +23,10 @@ import {
 export default function WelcomePage() {
   const navigate = useNavigate();
 
+useEffect(() => {
+  posthog.capture("landing_viewed");
+}, []);
+
   const today = new Date();
 
   const chamberLayout =
@@ -39,6 +43,8 @@ export default function WelcomePage() {
   );
 
 const [isMobile, setIsMobile] = useState(false);
+
+
 
 useEffect(() => {
   const check = () => setIsMobile(window.innerWidth < 768);
@@ -153,7 +159,7 @@ const startVoting = (
   amendments: typeof mockAmendments,
   quickStartLabel?: string
 ) => {
-  posthog.capture('voting session started', {
+  posthog.capture('voting_started', {
     quick_start: quickStartLabel,
     amendment_count: amendments.length,
   });
@@ -267,7 +273,10 @@ const startVoting = (
         <div className="w-full max-w-md mx-auto px-4 flex justify-center">
           <button
             className="w-auto px-6 py-2 text-sm bg-blue-500 rounded-lg text-white hover:bg-blue-600 transition-colors font-bold shadow-lg shadow-blue-500/30"
-            onClick={() => navigate("/filter")}
+            onClick={() => {
+  posthog.capture("filter_flow_started");
+  navigate("/filter");
+}}
           >
             Zelf filters kiezen
           </button>

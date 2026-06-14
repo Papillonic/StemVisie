@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { posthog, getDistinctId } from "../lib/posthog";
+import { posthog} from "../lib/posthog";
 import Layout from "../components/Layout";
 import GlassCard from "../components/GlassCard";
 import StickyBar from "../components/StickyBar";
@@ -25,6 +25,8 @@ export default function VotingPage() {
   const amendmentsFromNav: Amendment[] = location.state?.amendments ?? [];
 
   const storedAmendmentsRaw = localStorage.getItem("voting_amendments");
+
+ const [flash, setFlash] = useState(false);  	
 
   if (amendmentsFromNav.length > 0) {
     const incoming = JSON.stringify(amendmentsFromNav);
@@ -67,7 +69,7 @@ useEffect(() => {
   const [textMode, setTextMode] =
     useState<"simple" | "short" | "full">("short");
 
-  const [flash, setFlash] = useState(false);
+  //const [flash, setFlash] = useState(false);
 
   // =========================
   // STORAGE SYNC
@@ -127,6 +129,7 @@ useEffect(() => {
         id: abbr,
         name: party?.name ?? abbr,
         abbreviation: abbr,
+	color: abbr,
         votes: {
           welcome: {
             voor: random < 0.5 ? 1 : 0,
@@ -157,17 +160,13 @@ useEffect(() => {
       { amendmentId: current.id, vote },
     ]);
 
-    posthog.capture({
-      distinctId: getDistinctId(),
-      event: 'vote cast',
-      properties: {
-        vote,
-        amendment_id: current.id,
-        amendment_title: current.title,
-        amendment_index: index + 1,
-        total_amendments: total,
-      },
-    });
+    posthog.capture('vote cast', {
+  vote,
+  amendment_id: current.id,
+  amendment_title: current.title,
+  amendment_index: index + 1,
+  total_amendments: total,
+});
 
     if (isLast) {
       setFlash(true);
@@ -185,14 +184,10 @@ useEffect(() => {
   const handleFinish = () => {
     localStorage.removeItem("voting_index");
 
-    posthog.capture({
-      distinctId: getDistinctId(),
-      event: 'voting session completed',
-      properties: {
-        votes_cast: userVotes.length,
-        total_amendments: amendments.length,
-      },
-    });
+    posthog.capture('voting session completed', {
+  votes_cast: userVotes.length,
+  total_amendments: amendments.length,
+});
 
     navigate("/result", {
       state: {
@@ -202,8 +197,8 @@ useEffect(() => {
     });
   };
 
-  const buttonWidth = "120px";
-  const navButtonWidth = "150px";
+  //const buttonWidth = "120px";
+  //const navButtonWidth = "150px";
 
   return (
     <Layout>
@@ -305,23 +300,24 @@ useEffect(() => {
       Onthouden
     </button>
 
-    {/* Volgende / Afronden */}
-    {!isLast ? (
-      <button
-        className="flex-1 sm:flex-none sm:w-[120px] py-2 text-sm rounded-lg bg-blue-600 text-white"
-        onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
-      >
-        Volgende
-      </button>
-    ) : (
-      <button
-        className="flex-1 sm:flex-none sm:w-[120px] py-2 text-sm rounded-lg bg-blue-600 text-white"
-        onClick={handleFinish}
-      >
-        Afronden
-      </button>
-    )}
-
+{/* Volgende / Afronden */}
+{!isLast ? (
+  <button
+    className="flex-1 sm:flex-none sm:w-[120px] py-2 text-sm rounded-lg bg-blue-600 text-white"
+    onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}
+  >
+    Volgende
+  </button>
+) : (
+  <button
+    className={`flex-1 sm:flex-none sm:w-[120px] py-2 text-sm rounded-lg bg-blue-600 text-white transition-transform duration-300 ${
+      flash ? "scale-110" : "scale-100"
+    }`}
+    onClick={handleFinish}
+  >
+    Afronden
+  </button>
+)}
   </div>
 </StickyBar>
     </Layout>

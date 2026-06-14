@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { posthog, getDistinctId } from "../lib/posthog";
+import { posthog} from "../lib/posthog";
 
 import Layout from "../components/Layout";
 import GlassCard from "../components/GlassCard";
@@ -66,6 +66,7 @@ useEffect(() => {
         id: abbr,
         name: partyMap[abbr] ?? abbr,
         abbreviation: abbr,
+	color: abbr,
         votes: {
           welcome: {
             voor: random < 0.5 ? 1 : 0,
@@ -148,22 +149,21 @@ useEffect(() => {
     },
   ];
 
-  const startVoting = (
-    amendments: typeof mockAmendments,
-    quickStartLabel?: string
-  ) => {
-    posthog.capture('voting session started', {
-  source: 'quick_start',
-  quick_start_label: quickStartLabel,
-  amendment_count: amendments.length,
-});
-    navigate("/voting", {
-      state: {
-        amendments,
-      },
-    });
-  };
+const startVoting = (
+  amendments: typeof mockAmendments,
+  quickStartLabel?: string
+) => {
+  posthog.capture('voting session started', {
+    quick_start: quickStartLabel,
+    amendment_count: amendments.length,
+  });
 
+  navigate("/voting", {
+    state: {
+      amendments,
+    },
+  });
+};
   return (
     <Layout>
       {/* 🔵 Halve cirkel */}

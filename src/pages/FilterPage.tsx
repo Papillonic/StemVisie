@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { posthog, getDistinctId } from "../lib/posthog";
+import { posthog} from "../lib/posthog";
 import Layout from "../components/Layout";
 import GlassCard from "../components/GlassCard";
 import StickyBar from "../components/StickyBar";
@@ -12,6 +12,9 @@ import {
   kamerLayoutNov2023_Nov2025,
   kamerLayoutVanafFeb2026,
 } from "../lib/kamerLayouts";
+
+import type { Amendment } from "../lib/schema";
+
 
 export default function FilterPage() {
   const navigate = useNavigate();
@@ -56,6 +59,7 @@ useEffect(() => {
           id: abbr,
           name: partyMap[abbr] ?? abbr,
           abbreviation: abbr,
+	  color: abbr,
           votes: {
             welcome: {
               voor: random < 0.5 ? 1 : 0,
@@ -92,9 +96,10 @@ useEffect(() => {
     return Array.isArray(cat) ? cat : [cat];
   };
 
-  const geldigeIndieners = (indieners = []) =>
-    indieners.filter((i) => i.naam !== "TK");
 
+const geldigeIndieners = (
+  indieners: Amendment["indieners"] = []
+) => (indieners ?? []).filter((i) => i.naam !== "TK");
   const filteredAmendments = useMemo(() => {
     return mockAmendments.filter((a) => {
       if (
@@ -152,19 +157,15 @@ useEffect(() => {
 
     if (filteredAmendments.length === 0) return;
 
-    posthog.capture({
-      distinctId: getDistinctId(),
-      event: 'voting session started',
-      properties: {
-        source: 'custom_filter',
-        amendment_count: filteredAmendments.length,
-        has_search: !!search,
-        has_categorie: !!categorie,
-        has_indiener: !!indienerNaam,
-        has_fractie: !!indienerFractie,
-        has_date_range: !!(dateFrom || dateTo),
-      },
-    });
+posthog.capture('voting session started', {
+  source: 'custom_filter',
+  amendment_count: filteredAmendments.length,
+  has_search: !!search,
+  has_categorie: !!categorie,
+  has_indiener: !!indienerNaam,
+  has_fractie: !!indienerFractie,
+  has_date_range: !!(dateFrom || dateTo),
+});
 
     localStorage.setItem(
       "voting_amendments",
@@ -287,7 +288,7 @@ useEffect(() => {
                     )
                   )
                 ).map((f) => (
-                  <option key={f} value={f}>
+                  <option key={f ?? ""} value={f ?? ""}>
                     {f}
                   </option>
                 ))}

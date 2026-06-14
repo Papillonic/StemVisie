@@ -17,7 +17,7 @@ export type Party =
   | "FVD"
   | "JA2"
   | "PLU"
-  | "GMK"
+  | "MAR"
   | "KEI";
 
 export interface SeatAssignment {

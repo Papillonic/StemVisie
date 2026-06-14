@@ -2,7 +2,7 @@
 
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect, useMemo } from "react";
-import { posthog, getDistinctId } from "../lib/posthog";
+import { posthog} from "../lib/posthog";
 
 import Layout from "../components/Layout";
 import StickyBar from "../components/StickyBar";
@@ -100,6 +100,7 @@ useEffect(() => {
         id: abbr,
         name: party?.name ?? abbr,
         abbreviation: abbr,
+	color: abbr,
         votes: {
           welcome: { voor, tegen, onthouden },
         },
@@ -126,7 +127,7 @@ useEffect(() => {
 
         if (hasVotes) {
           for (const userVote of userVotes) {
-            const partyVote = party.votes[userVote.amendmentId];
+            const partyVote = party.votes?.[userVote.amendmentId];
 
             if (!partyVote) continue;
 
@@ -158,22 +159,20 @@ useEffect(() => {
       .sort((a, b) => b.percentage - a.percentage);
   }, [userVotes, hasVotes]);
 
-  useEffect(() => {
-    if (userVotes.length > 0) {
-      const topMatch = results[0];
-      posthog.capture({
-        distinctId: getDistinctId(),
-        event: 'results viewed',
-        properties: {
-          votes_cast: userVotes.length,
-          total_amendments: amendments.length,
-          top_match_party: topMatch?.name,
-          top_match_percentage: topMatch?.percentage,
-        },
-      });
-    }
+useEffect(() => {
+  if (userVotes.length > 0) {
+    const topMatch = results[0];
+
+    posthog.capture('results viewed', {
+      votes_cast: userVotes.length,
+      total_amendments: amendments.length,
+      top_match_party: topMatch?.name,
+      top_match_percentage: topMatch?.percentage,
+    });
+  }
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+}, []);
 
   // ===== UI (100% SAME) =====
   return (
@@ -224,7 +223,7 @@ useEffect(() => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
               {results.map((r) => {
                 const bgColor =
-                  PARTY_HOUSE_STYLES[r.abbreviation.toUpperCase()] ?? "#555";
+                  PARTY_HOUSE_STYLES[r.abbreviation.toUpperCase() as keyof typeof PARTY_HOUSE_STYLES] ?? "#555";
 
                 return (
                   <div

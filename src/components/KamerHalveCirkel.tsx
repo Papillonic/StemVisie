@@ -1,8 +1,12 @@
 "use client";
 
-import type { Party } from "@shared/schema";
-import { PARTY_HOUSE_STYLES } from "@/lib/partyHouseStyles";
-import type { ChamberLayoutPeriod, SeatAssignment } from "@shared/schema";
+import { PARTY_HOUSE_STYLES } from "../lib/partyHouseStyles";
+
+import type {
+  Party,
+  ChamberLayoutPeriod,
+  SeatAssignment,
+} from "../lib/schema";
 
 interface KamerHalveCirkelProps {
   parties: Party[];
@@ -216,7 +220,7 @@ style={{
           .join(" ");
 
         const partyColor =
-          PARTY_HOUSE_STYLES[seat.party.abbreviation] ?? "#999";
+          PARTY_HOUSE_STYLES[seat.party.abbreviation as keyof typeof PARTY_HOUSE_STYLES] ?? "#999";
 
         const voteColor =
           seat.vote === "voor"

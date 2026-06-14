@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   kamerLayoutNov2023_Nov2025,
   kamerLayoutVanafFeb2026,
-} from "@/lib/kamerLayouts";
+} from "../lib/kamerLayouts";
 
 const partySlugMap: Record<string, string> = {
   VVD: "vvd.svg",
@@ -53,7 +53,7 @@ export default function PartiesTicker() {
   const [logos, setLogos] = useState<string[]>([]);
   const trackRef = useRef<HTMLDivElement>(null);
   const logoRefs = useRef<HTMLDivElement[]>([]);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
   const singleSetWidthRef = useRef(0);
   const startTimeRef = useRef(0);
 

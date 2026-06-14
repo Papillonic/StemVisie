@@ -1,8 +1,8 @@
-import type { Party } from "@shared/schema";
+import type { Party } from "./schema";
 
 export const mockParties: Party[] = [
   {
-    "id": 1,
+    "id": "1",
     "name": "50PLUS",
     "abbreviation": "50P",
     "color": "#999999",
@@ -4500,7 +4500,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "PvdD",
     "abbreviation": "PvdD",
     "color": "#006A4E",
@@ -9028,7 +9028,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "JA21",
     "abbreviation": "JA21",
     "color": "#003366",
@@ -13556,7 +13556,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "CDA",
     "abbreviation": "CDA",
     "color": "#007A33",
@@ -18084,7 +18084,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "FVD",
     "abbreviation": "FVD",
     "color": "#7A0019",
@@ -22612,7 +22612,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "SGP",
     "abbreviation": "SGP",
     "color": "#F57C00",
@@ -27140,7 +27140,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 7,
+    "id": "7",
     "name": "Groep Markuszower",
     "abbreviation": "GRO",
     "color": "#999999",
@@ -31633,7 +31633,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 8,
+    "id": "8",
     "name": "D66",
     "abbreviation": "D66",
     "color": "#00B3E3",
@@ -36161,7 +36161,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 9,
+    "id": "9",
     "name": "Keijzer",
     "abbreviation": "KEI",
     "color": "#999999",
@@ -38149,7 +38149,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 10,
+    "id": "10",
     "name": "BBB",
     "abbreviation": "BBB",
     "color": "#5A8F29",
@@ -42677,7 +42677,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 11,
+    "id": "11",
     "name": "ChristenUnie",
     "abbreviation": "CHR",
     "color": "#999999",
@@ -47205,7 +47205,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 12,
+    "id": "12",
     "name": "Volt",
     "abbreviation": "Volt",
     "color": "#582C83",
@@ -51733,7 +51733,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 13,
+    "id": "13",
     "name": "PVV",
     "abbreviation": "PVV",
     "color": "#1A1A1A",
@@ -56261,7 +56261,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 14,
+    "id": "14",
     "name": "VVD",
     "abbreviation": "VVD",
     "color": "#0A2CCA",
@@ -60789,7 +60789,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 15,
+    "id": "15",
     "name": "GroenLinks-PvdA",
     "abbreviation": "GL",
     "color": "#00A651",
@@ -65317,7 +65317,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 16,
+    "id": "16",
     "name": "SP",
     "abbreviation": "SP",
     "color": "#E11C2A",
@@ -69845,7 +69845,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 17,
+    "id": "17",
     "name": "DENK",
     "abbreviation": "DENK",
     "color": "#7B2CBF",
@@ -74373,7 +74373,7 @@ export const mockParties: Party[] = [
     }
   },
   {
-    "id": 18,
+    "id": "18",
     "name": "NSC",
     "abbreviation": "NSC",
     "color": "#6B4EFF",

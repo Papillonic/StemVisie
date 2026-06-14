@@ -2,7 +2,7 @@
 
 import { useMemo, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { posthog, getDistinctId } from "../lib/posthog";
+import { posthog } from "../lib/posthog";
 
 import Layout from "../components/Layout";
 import GlassCard from "../components/GlassCard";
@@ -71,11 +71,13 @@ export default function MotieDetailPage() {
   }
 
   // ===== CHAMBER LAYOUT =====
-const chamberLayout = getLayoutForDate(current.stemDatum);
+const chamberLayout = getLayoutForDate(current.stemDatum ?? "");
+
+if (!chamberLayout) return null;
 
   // ===== TOTAL VOTE COUNT =====
   const totalVotes = mockParties
-    .map((p) => p.votes[current.id])
+    .map((p) => p.votes?.[current.id])
     .filter(Boolean)
     .reduce(
       (acc, v) => ({
@@ -96,18 +98,15 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  posthog.capture({
-    distinctId: getDistinctId(),
-    event: 'motion detail viewed',
-    properties: {
-      amendment_id: current.id,
-      amendment_title: current.title,
-      amendment_index: index + 1,
-      total_amendments: amendments.length,
-      user_vote: userVote,
-    },
+  posthog.capture('motion detail viewed', {
+    amendment_id: current.id,
+    amendment_title: current.title,
+    amendment_index: index + 1,
+    total_amendments: amendments.length,
+    user_vote: userVote,
   });
-// eslint-disable-next-line react-hooks/exhaustive-deps
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [index]);
 
   const motionResult = getMajorityVote(totalVotes);
@@ -119,7 +118,7 @@ useEffect(() => {
       ? "Motie afgewezen"
       : "Motie onthouden";
 
-const formattedDate = new Date(current.stemDatum).toLocaleDateString(
+const formattedDate = new Date(current.stemDatum ?? "").toLocaleDateString(
   "nl-NL",
   {
     day: "numeric",
@@ -132,7 +131,7 @@ const formattedDate = new Date(current.stemDatum).toLocaleDateString(
   const visibleParties = useMemo(() => {
     return mockParties
       .map((party) => {
-        const partyVote = party.votes[current.id];
+        const partyVote = party.votes?.[current.id];
 
         if (!partyVote) return null;
 

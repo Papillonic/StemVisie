@@ -1,5 +1,10 @@
 import React from "react";
-import KamerHalveCirkel from "./KamerHalveCirkel";
+//import KamerHalveCirkel from "./KamerHalveCirkel";
+
+//type Props = {
+//  className?: string;
+//  children?: React.ReactNode;
+//};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

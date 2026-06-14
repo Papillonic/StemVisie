@@ -1,9 +1,13 @@
 // src/components/KamerHalveCirkelWelcomeReal.tsx
 "use client";
 
-import type { Party } from "@shared/schema";
-import { PARTY_HOUSE_STYLES } from "@/lib/partyHouseStyles";
-import type { ChamberLayoutPeriod, SeatAssignment } from "@shared/schema";
+import { PARTY_HOUSE_STYLES } from "../lib/partyHouseStyles";
+
+import type {
+  Party,
+  ChamberLayoutPeriod,
+  SeatAssignment,
+} from "../lib/schema";
 
 interface KamerHalveCirkelProps {
   parties: Party[];
@@ -197,7 +201,7 @@ export default function KamerHalveCirkel({
           .map(([x, y]) => `${x},${y}`)
           .join(" ");
 
-        const partyColor = PARTY_HOUSE_STYLES[seat.party.abbreviation] ?? "#999";
+        const partyColor = PARTY_HOUSE_STYLES[seat.party.abbreviation as keyof typeof PARTY_HOUSE_STYLES] ?? "#999";
         const voteColor =
           seat.vote === "voor" ? "#22c55e" : seat.vote === "tegen" ? "#ef4444" : "#9ca3af";
 

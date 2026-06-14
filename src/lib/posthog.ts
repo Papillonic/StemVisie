@@ -13,13 +13,17 @@ export function getDistinctId(): string {
   return id;
 }
 
-posthog.init(
-  import.meta.env.VITE_POSTHOG_KEY,
-  {
-    api_host: import.meta.env.VITE_POSTHOG_HOST,
+const key = import.meta.env.VITE_POSTHOG_KEY;
+const host = import.meta.env.VITE_POSTHOG_HOST;
+
+if (key && host) {
+  posthog.init(key, {
+    api_host: host,
     capture_pageview: true,
     persistence: 'localStorage',
-  }
-);
+  });
+} else {
+  console.warn('[PostHog] missing env vars', { key, host });
+}
 
 export { posthog };

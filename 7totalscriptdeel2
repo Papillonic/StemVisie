@@ -1,0 +1,170 @@
+const fs = require("fs");
+const path = require("path");
+
+// --------------------
+// 1. load moties
+// --------------------
+const { moties } = require("./moties");
+
+if (!Array.isArray(moties)) {
+  throw new Error("moties is geen array");
+}
+
+// --------------------
+// 2. helpers
+// --------------------
+function extractCoreText(text) {
+  if (!text) return undefined;
+
+  const match = text.match(/(constaterende[\s\S]*)/i);
+  if (!match) return text.trim();
+
+  return match[1]
+    .split(/en gaat over tot de orde van de dag/i)[0]
+    .trim();
+}
+
+// --------------------
+// 3. state
+// --------------------
+const mockAmendments = [];
+const partijStemmen = new Map();
+const uitvalMoties = [];
+
+// --------------------
+// 4. process moties
+// --------------------
+for (const motie of moties) {
+  const ks = motie.Kamerstukken?.[0];
+
+  const fullText =
+    ks?.PdfText ??
+    motie.Onderwerp ??
+    undefined;
+
+  const description = extractCoreText(fullText);
+
+  const simplified = ks?.EenvoudigeTekst
+    ? ks.EenvoudigeTekst.replace(/^===\s*/g, "").trim()
+    : undefined;
+
+  const stemmingen =
+    motie.Besluit?.flatMap(b => b.Stemmingen || []) || [];
+
+  const verdelingPerMotie = {};
+  let totaalStemmen = 0;
+
+  for (const s of stemmingen) {
+    if (!s.ActorNaam || !s.FractieGrootte) continue;
+
+    const naam = s.ActorNaam.trim();
+
+    const raw = (s.Soort || "").toLowerCase().trim();
+
+    const soort =
+      raw.includes("voor") ? "voor" :
+      raw.includes("tegen") ? "tegen" :
+      "onthouden";
+
+    if (!verdelingPerMotie[naam]) {
+      verdelingPerMotie[naam] = { voor: 0, tegen: 0, onthouden: 0 };
+    }
+
+    verdelingPerMotie[naam][soort] += s.FractieGrootte;
+    totaalStemmen += s.FractieGrootte;
+  }
+
+  // --------------------
+  // skip invalid votes
+  // --------------------
+  if (totaalStemmen !== 150) {
+    uitvalMoties.push({
+      id: motie.Id,
+      title: motie.Onderwerp,
+      totaalStemmen,
+    });
+    continue;
+  }
+
+  // --------------------
+  // store party votes
+  // --------------------
+  for (const [naam, verdeling] of Object.entries(verdelingPerMotie)) {
+    if (!partijStemmen.has(naam)) {
+      partijStemmen.set(naam, {});
+    }
+    partijStemmen.get(naam)[motie.Id] = verdeling;
+  }
+
+  // --------------------
+  // amendment output
+  // --------------------
+  mockAmendments.push({
+    id: motie.Id,
+    title: motie.Onderwerp,
+    description,
+    fullDescription: fullText,
+    simplified,
+    Soort: motie.Soort ?? undefined,
+    Categorie:
+      motie.Kamerstukken?.[0]?.Categorie ??
+      undefined,
+    stemDatum: motie.Besluit?.[0]?.GewijzigdOp ?? undefined,
+
+    indieners: Array.isArray(motie.ZaakActor)
+      ? motie.ZaakActor.map(a => ({
+          naam: a.ActorNaam?.trim(),
+          fractie: a.ActorFractie ?? undefined,
+        }))
+      : undefined,
+  });
+}
+
+// --------------------
+// 5. build parties
+// --------------------
+const mockParties = [...partijStemmen.entries()].map(([name, votes], i) => ({
+  id: String(i + 1),
+  name,
+  abbreviation: name.slice(0, 3).toUpperCase(),
+  color: "#999999",
+  votes,
+}));
+
+// --------------------
+// 6. output folder
+// --------------------
+const outputDir = path.resolve(__dirname, "./output");
+fs.mkdirSync(outputDir, { recursive: true });
+
+// --------------------
+// 7. write file
+// --------------------
+const fileContent = `
+// AUTO-GENERATED FILE
+
+export const mockAmendments = ${JSON.stringify(mockAmendments, null, 2)};
+
+export const mockParties = ${JSON.stringify(mockParties, null, 2)};
+`;
+
+fs.writeFileSync(
+  path.join(outputDir, "mockData.ts"),
+  fileContent,
+  "utf-8"
+);
+
+// --------------------
+// 8. log
+// --------------------
+if (uitvalMoties.length > 0) {
+  fs.writeFileSync(
+    path.join(outputDir, "uitval.ts"),
+    `export const uitvalMoties = ${JSON.stringify(uitvalMoties, null, 2)};`
+  );
+}
+
+console.log("✅ DONE");
+console.log("📦 amendments:", mockAmendments.length);
+console.log("🏛️ parties:", mockParties.length);
+console.log("⚠️ uitval:", uitvalMoties.length);

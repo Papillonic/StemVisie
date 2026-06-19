@@ -1,0 +1,154 @@
+const fs = require("fs");
+const path = require("path");
+const https = require("https");
+const pdfjsLib = require("pdfjs-dist/legacy/build/pdf.js");
+
+const BASE_URL = "https://gegevensmagazijn.tweedekamer.nl/OData/v4/2.0";
+
+const filePath = path.join(__dirname, "src/lib/mockData.ts");
+const raw = fs.readFileSync(filePath, "utf8");
+
+// --------------------
+// mockData extract
+// --------------------
+const start = raw.indexOf("mockAmendments");
+const arrayStart = raw.indexOf("[", start);
+const arrayEnd = raw.indexOf("];", arrayStart);
+
+const data = eval("(" + raw.slice(arrayStart, arrayEnd + 1) + ")");
+
+// --------------------
+// API helper
+// --------------------
+function fetchData(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, (res) => {
+      let data = "";
+      res.on("data", chunk => data += chunk);
+      res.on("end", () => {
+        try {
+          resolve(JSON.parse(data));
+        } catch (e) {
+          reject(e);
+        }
+      });
+    }).on("error", reject);
+  });
+}
+
+// --------------------
+// PDF download
+// --------------------
+function downloadPdf(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, (res) => {
+      if (res.statusCode !== 200) return reject(new Error("PDF error"));
+
+      const chunks = [];
+      res.on("data", c => chunks.push(c));
+      res.on("end", () => resolve(new Uint8Array(Buffer.concat(chunks))));
+    }).on("error", reject);
+  });
+}
+
+// --------------------
+// PDF extract
+// --------------------
+async function extractText(data) {
+  const pdf = await pdfjsLib.getDocument({ data }).promise;
+
+  let text = "";
+
+  for (let i = 1; i <= pdf.numPages; i++) {
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    text += content.items.map(i => i.str).join(" ") + "\n";
+  }
+
+  return text;
+}
+
+// --------------------
+// OData → dossier + PDF URL
+// --------------------
+async function getDossierAndPdfUrl(query) {
+  const url =
+    `${BASE_URL}/Zaak?` +
+    `$top=1&$filter=contains(Onderwerp,'${encodeURIComponent(query)}')` +
+    `&$expand=Kamerstukdossier($select=Nummer,Toevoeging),Besluit` +
+    `&$select=Nummer,Volgnummer`;
+
+  const res = await fetchData(url);
+  const item = res.value?.[0];
+
+  if (!item) return null;
+
+  const dossier = item.Kamerstukdossier?.[0];
+
+  if (!dossier?.Nummer) return null;
+
+  const parts = [dossier.Nummer];
+  if (dossier.Toevoeging) parts.push(dossier.Toevoeging);
+  if (item.Volgnummer) parts.push(item.Volgnummer);
+
+  const pdfUrl = `https://zoek.officielebekendmakingen.nl/kst-${parts.join("-")}.pdf`;
+
+  return {
+    pdfUrl,
+    dossierNummer: dossier.Nummer,
+    toevoeging: dossier.Toevoeging || null,
+    volgnummer: item.Volgnummer || null
+  };
+}
+
+// --------------------
+// matches
+// --------------------
+const matches = data.filter((item) => {
+  const title = (item?.title || "").trim();
+  const full = item?.fullDescription || "";
+  return title && full && full.startsWith(title);
+});
+
+console.log("✅ Matches:", matches.length);
+
+// --------------------
+// MAIN
+// --------------------
+(async () => {
+  console.log("\n📌 Eerste 3 moties met PDF tekst:\n");
+
+  for (const item of matches.slice(0, 3)) {
+    console.log("------------------------------------------------");
+    console.log("ID:", item.id);
+    console.log("Title:", item.title);
+
+    try {
+      // 1. API → dossier + PDF url
+      const meta = await getDossierAndPdfUrl(item.title);
+
+      if (!meta) {
+        console.log("❌ Geen dossier gevonden");
+        continue;
+      }
+
+      console.log("Dossiernummer:", meta.dossierNummer);
+      console.log("PDF URL:", meta.pdfUrl);
+
+      // 2. PDF downloaden
+      const pdfData = await downloadPdf(meta.pdfUrl);
+
+      // 3. tekst extraheren
+      const text = await extractText(pdfData);
+
+      // 4. preview
+      console.log("\n📄 PDF tekst preview:\n");
+      console.log(text.slice(0, 800)); // eerste stuk
+
+    } catch (err) {
+      console.log("⚠️ Fout bij PDF:", err.message);
+    }
+
+    console.log("\n");
+  }
+})();

@@ -1,0 +1,96 @@
+const fs = require("fs");
+const path = require("path");
+
+const inputPath = path.join(__dirname, "src/lib/mockData.ts");
+const outputPath = path.join(__dirname, "src/lib/mockData.cleaned.ts");
+
+const raw = fs.readFileSync(inputPath, "utf8");
+
+// --------------------
+function extractArray(raw) {
+  const eqIndex = raw.indexOf("=");
+
+  const after = eqIndex !== -1 ? raw.slice(eqIndex + 1) : raw;
+
+  const start = after.indexOf("[");
+
+  let depth = 0;
+  let end = -1;
+
+  for (let i = start; i < after.length; i++) {
+    const char = after[i];
+
+    if (char === "[") depth++;
+    if (char === "]") depth--;
+
+    if (depth === 0) {
+      end = i;
+      break;
+    }
+  }
+
+  const clean = after.slice(start, end + 1);
+
+  return eval("(" + clean + ")");
+}
+
+// --------------------
+function createDescription(fullDescription = "") {
+  let text = fullDescription;
+
+  const startMarker = "gehoord de beraadslaging,";
+  const startIndex = text.indexOf(startMarker);
+
+  if (startIndex !== -1) {
+    text = text.slice(startIndex + startMarker.length);
+  }
+
+  text = text.replace(
+    /\s*,?\s*en gaat over tot de orde van de dag[\s\S]*$/i,
+    ""
+  );
+
+  return text.replace(/\s+/g, " ").trim();
+}
+
+// --------------------
+const amendments = extractArray(raw);
+
+let updatedRaw = raw;
+let count = 0;
+
+for (const amendment of amendments) {
+  if (!amendment.id || !amendment.fullDescription) continue;
+
+  const newDescription = createDescription(
+    amendment.fullDescription
+  );
+
+  const escapedDescription = JSON.stringify(newDescription);
+
+  const objectRegex = new RegExp(
+    `"id"\\s*:\\s*"${amendment.id}"([\\s\\S]*?)(?=\\n\\s*\\},|\\n\\s*\\}\\s*\\])`,
+    "g"
+  );
+
+  updatedRaw = updatedRaw.replace(
+    objectRegex,
+    (objectBlock) => {
+      if (!/"description"\s*:/.test(objectBlock)) {
+        return objectBlock;
+      }
+
+      count++;
+
+      return objectBlock.replace(
+        /"description"\s*:\s*"((?:\\.|[^"\\])*)"/s,
+        `"description": ${escapedDescription}`
+      );
+    }
+  );
+}
+
+fs.writeFileSync(outputPath, updatedRaw, "utf8");
+
+console.log(`✅ ${count} descriptions aangepast`);
+console.log(`📄 opgeslagen als ${outputPath}`);

@@ -1,0 +1,101 @@
+const fs = require("fs");
+const path = require("path");
+
+// --------------------
+const enrichedPath = path.join(__dirname, "src/lib/mockData.enriched.ts");
+const originalPath = path.join(__dirname, "src/lib/mockData.ts");
+const outputPath = path.join(__dirname, "src/lib/mockData.merged.ts");
+
+// --------------------
+const enrichedRaw = fs.readFileSync(enrichedPath, "utf8");
+const originalRaw = fs.readFileSync(originalPath, "utf8");
+
+// --------------------
+// Zelfde extractor als je oorspronkelijke script
+// --------------------
+function extractArray(raw) {
+  const eqIndex = raw.indexOf("=");
+  const after = eqIndex !== -1 ? raw.slice(eqIndex + 1) : raw;
+
+  const start = after.indexOf("[");
+
+  let depth = 0;
+  let end = -1;
+
+  for (let i = start; i < after.length; i++) {
+    const char = after[i];
+
+    if (char === "[") depth++;
+    if (char === "]") depth--;
+
+    if (depth === 0) {
+      end = i;
+      break;
+    }
+  }
+
+  const clean = after.slice(start, end + 1);
+
+  return eval("(" + clean + ")");
+}
+
+// --------------------
+// Lees enriched data
+// --------------------
+const enriched = extractArray(enrichedRaw);
+
+// --------------------
+// Maak map id -> fullDescription
+// --------------------
+const descriptionMap = new Map();
+
+for (const item of enriched) {
+  if (item.id && item.fullDescription) {
+    descriptionMap.set(item.id, item.fullDescription);
+  }
+}
+
+console.log(`📦 ${descriptionMap.size} enriched descriptions gevonden`);
+
+// --------------------
+// Alleen fullDescription vervangen
+// --------------------
+let updatedRaw = originalRaw;
+let replacedCount = 0;
+
+for (const [id, newDescription] of descriptionMap.entries()) {
+  // Zoek eerst het object met dit id
+  const objectRegex = new RegExp(
+    `"id"\\s*:\\s*"${id}"([\\s\\S]*?)(?=\\n\\s*\\},|\\n\\s*\\}\\s*\\])`,
+    "g"
+  );
+
+  updatedRaw = updatedRaw.replace(objectRegex, (objectBlock) => {
+    // Escape voor JSON-string in TS bestand
+    const escapedDescription = JSON.stringify(newDescription);
+
+    const fullDescriptionRegex =
+      /"fullDescription"\s*:\s*"((?:\\.|[^"\\])*)"/s;
+
+    if (!fullDescriptionRegex.test(objectBlock)) {
+      return objectBlock;
+    }
+
+    replacedCount++;
+
+    return objectBlock.replace(
+      fullDescriptionRegex,
+      `"fullDescription": ${escapedDescription}`
+    );
+  });
+}
+
+// --------------------
+// Nieuw bestand schrijven
+// --------------------
+fs.writeFileSync(outputPath, updatedRaw, "utf8");
+
+// --------------------
+console.log("✅ Klaar");
+console.log(`✏️ ${replacedCount} fullDescription velden vervangen`);
+console.log(`📄 Output: ${outputPath}`);

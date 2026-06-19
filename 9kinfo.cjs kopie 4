@@ -1,0 +1,78 @@
+const fs = require("fs");
+const path = require("path");
+
+// --------------------
+const enrichedPath = path.join(__dirname, "src/lib/mockData.enriched.ts");
+const originalPath = path.join(__dirname, "src/lib/mockData.ts");
+
+const enrichedRaw = fs.readFileSync(enrichedPath, "utf8");
+const originalRaw = fs.readFileSync(originalPath, "utf8");
+
+// --------------------
+// SAFE ARRAY EXTRACTOR (FIX)
+// --------------------
+function extractArray(raw) {
+  const eqIndex = raw.indexOf("=");
+
+  const after = eqIndex !== -1 ? raw.slice(eqIndex + 1) : raw;
+
+  const start = after.indexOf("[");
+
+  let depth = 0;
+  let end = -1;
+
+  for (let i = start; i < after.length; i++) {
+    const char = after[i];
+
+    if (char === "[") depth++;
+    if (char === "]") depth--;
+
+    if (depth === 0) {
+      end = i;
+      break;
+    }
+  }
+
+  const clean = after.slice(start, end + 1);
+
+  return eval("(" + clean + ")");
+}
+
+const enriched = extractArray(enrichedRaw);
+const original = extractArray(originalRaw);
+
+// --------------------
+const map = new Map();
+
+for (const item of enriched) {
+  map.set(item.id, item.fullDescription);
+}
+
+// --------------------
+const updated = original.map((item) => {
+  if (map.has(item.id)) {
+    return {
+      ...item,
+      fullDescription: map.get(item.id),
+    };
+  }
+  return item;
+});
+
+// --------------------
+fs.writeFileSync(
+  path.join(__dirname, "src/lib/mockData.backup.ts"),
+  originalRaw,
+  "utf8"
+);
+
+fs.writeFileSync(
+  originalPath,
+  "export const mockAmendments = " +
+    JSON.stringify(updated, null, 2) +
+    ";\n",
+  "utf8"
+);
+
+console.log("✅ Klaar - geen syntax errors meer");
+console.log("📦 backup gemaakt");

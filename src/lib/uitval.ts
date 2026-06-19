@@ -45,11 +45,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "94d42d59-a75b-4979-919d-067eb25032fa",
-    "title": "Motie van het lid Beckerman c.s. over schadeloosstellingen en compensatie voor gedupeerden niet aanmerken als vermogen ",
-    "totaalStemmen": 0
-  },
-  {
     "id": "dd2137a2-bbb1-4cdb-a0e5-0772f9a021b2",
     "title": "Motie van het lid Van der Plas over Zijne Majesteit de Koning vragen de zaak-Insiya tijdens het werkbezoek onder de aandacht te brengen bij de Indiase premier",
     "totaalStemmen": 149
@@ -315,11 +310,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "b22d8d51-6570-473a-8c0a-22470ab127a8",
-    "title": "Gewijzigde motie van de leden Boomsma en Van der Plas over losplaatsen waar de afgelopen vijf jaar zonder problemen is gelost aanmerken als erkende losplaatsen (t.v.v. 21501-32-1752)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "c4b8bbc7-88cf-46e9-a146-22d979cecfa9",
     "title": "Motie van de leden Keijzer en Markuszower over het wetsvoorstel Strafbaarstelling van de verheerlijking van terrorisme na ontvangst vanuit de Raad van State onverwijld naar de Kamer sturen ",
     "totaalStemmen": 0
@@ -415,11 +405,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "f496fcb4-0808-461c-9670-2d8063a09561",
-    "title": "Motie van de leden Grinwis en Peter de Groot over nieuwe waterrobuuste woningbouw en drijvend wonen langs de randen van het Markermeer, Gouwzee, IJmeer, Gooimeer en Eemmeer mogelijk maken",
-    "totaalStemmen": 0
-  },
-  {
     "id": "3d15a72f-dd71-4458-a977-2e0cfd49534d",
     "title": "Motie van de leden Flach en Nobel",
     "totaalStemmen": 0
@@ -437,11 +422,6 @@ export const uitvalMoties = [
   {
     "id": "8a789fae-9508-4a8c-aef6-2f05d981ff40",
     "title": "Motie van het lid Lahlah c.s. over het voor de bijstand opnieuw beschikbaar stellen van eerder gereserveerde structurele middelen voor proactieve dienstverlening ",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "9a261381-f580-42f6-a54c-2f33deee57b2",
-    "title": "Motie van het lid Gabriëls c.s. over alles op alles zetten om op tijd te voldoen aan de KRW-eisen en daarbij een dwingender instrumentarium niet uit te sluiten ",
     "totaalStemmen": 0
   },
   {
@@ -467,11 +447,6 @@ export const uitvalMoties = [
   {
     "id": "e4eba0f9-fdd8-41ea-a170-2feb54c365a7",
     "title": "Motie van het lid Van Houwelingen over de keuzevrijheid voor pgb in alle zorgwetten blijven borgen",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "1e7adc1f-fb89-4c2a-9320-308917da7e1f",
-    "title": "Gewijzigde motie van de leden Kathmann en Stoffer over het DigiD-contract met Solvinity niet verlengen bij overname door een Amerikaans bedrijf (t.v.v. 26643-1473)",
     "totaalStemmen": 0
   },
   {
@@ -565,11 +540,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "56c4bbc9-7357-426d-b64d-3b5cc97da166",
-    "title": "Gewijzigde motie van het lid Boswijk c.s. over de regelgeving van de ISA voor diepzeemijnbouw voortvarend afronden (t.v.v. 36800-V-58)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "30a7e493-f5b0-4f51-95c4-3bef5d81a321",
     "title": "Motie van het lid Neijenhuis over de betrokkenheid van lokale overheden bij het Nederlandse nationaal en regionaal partnerschapsplan versterken ",
     "totaalStemmen": 0
@@ -655,18 +625,8 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "0738e8e8-3d00-47c0-a7bf-45b6eb4bdb75",
-    "title": "Gewijzigde motie van het lid Bushoff c.s. over voor 2027 ten minste 1% van het totale bedrag aan zorgfraude behouden voor de zorg (t.v.v. 36800-XVI-100)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "5df39c21-9c15-4472-b14f-45f4725b35b1",
     "title": "Motie van het lid Teunissen over onderzoeken hoe mogelijkheden voor bedrijven om geschillen met de Staat via arbitrage aan te spannen kunnen worden beperkt of uitgesloten ",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "198b300e-b741-4df6-8585-4722e7d2584b",
-    "title": "Gewijzigde motie van het lid Keijzer c.s. over aanvragen weigeren van personen met een lopende asielprocedure of internationale bescherming (t.v.v. 28684-856)",
     "totaalStemmen": 0
   },
   {
@@ -728,11 +688,6 @@ export const uitvalMoties = [
     "id": "9487d3f2-317c-4aa7-971c-4fb42f26831a",
     "title": "Motie van het lid Boomsma over de mogelijkheid in de conceptverklaring steunen dat lidstaten die zelf geen partij zijn in een zaak doorverwijzing naar de Grand Chamber kunnen steunen",
     "totaalStemmen": 149
-  },
-  {
-    "id": "1f569c57-a0e7-4a1c-b964-4fbf3c11052a",
-    "title": "Motie van de leden Claassen en Daniëlle Jansen over bewerkstelligen dat de vervolgstudies die nu post-sluis plaatsvinden tijdens de sluisperiode plaatsvinden ",
-    "totaalStemmen": 0
   },
   {
     "id": "6f5ee05e-efd7-4cce-85a1-4fe40d0a1bd8",
@@ -867,11 +822,6 @@ export const uitvalMoties = [
   {
     "id": "cb6da377-e3cc-4da8-acdd-5f3000665195",
     "title": "Motie van het lid Van der Plas over uitspreken te onderzoeken hoe een wettelijk stelsel kan worden ingevoerd dat het (tijdelijk) verbieden of beperken van publicatie van verkiezingspeilingen voorafgaand aan verkiezingen mogelijk maakt",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "09c77fbc-b61d-4eb1-b458-5fe1891c1dbc",
-    "title": "Gewijzigde motie van het lid Michon-Derkzen c.s. over een landelijke aanpak om statushouders naar werk in tekortsectoren te begeleiden (t.v.v.  32824-497)",
     "totaalStemmen": 0
   },
   {
@@ -1030,11 +980,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "623a68e5-46ce-41eb-a6fa-729c632b559f",
-    "title": "Gewijzigde motie van de leden Grinwis en Peter de Groot over nieuwe waterrobuuste woningbouw en drijvend wonen langs de randen van het Markermeer, Gouwzee, IJmeer, Gooimeer en Eemmeer mogelijk maken zonder dat de zoetwaterbufferfunctie teveel wordt aangetast (t.v.v. 36600-J-18)",
-    "totaalStemmen": 147
-  },
-  {
     "id": "47f6dd98-0081-4722-9363-72ebc7c1e80c",
     "title": "Motie van de leden Flach en Ceder over verkennen hoe een definitie van \"werkontwikkelbedrijven\" in de wet kan worden opgenomen ",
     "totaalStemmen": 0
@@ -1102,11 +1047,6 @@ export const uitvalMoties = [
   {
     "id": "da05013c-7884-40c3-83bb-7b3fb7985a39",
     "title": "Motie van het lid Van Brenk over buitenlandse deskundigen een belangrijke rol geven in het onderzoek",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "960d9c0a-7fa9-4645-b632-7b69688c6848",
-    "title": "Gewijzigde motie van het lid Boswijk c.s. over de Russische schaduwvloot harder aanpakken door verdachte olietankers zo mogelijk te onderscheppen (t.v.v. 36800-V-60)",
     "totaalStemmen": 0
   },
   {
@@ -1382,11 +1322,6 @@ export const uitvalMoties = [
   {
     "id": "dede969f-6df4-461b-aca7-946965f080b3",
     "title": "Motie van de leden Mutluer en Straatman over ook niet-commerciële kringloopwinkels met het Keurmerk Kringloop Nederland of een sbbi-status uitzonderen van de registratieplicht",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "8485f3a6-6f28-4c52-b1d4-95d4da295091",
-    "title": "Motie van de leden Flach en Stultiens over wetgeving voorbereiden om een daling van de AOW-leeftijd in de wetsystematiek mogelijk te maken ",
     "totaalStemmen": 0
   },
   {
@@ -1740,16 +1675,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "235938c2-016e-466a-976e-c2511272f5b4",
-    "title": "Gewijzigde motie van de leden Patijn en Dobbe over een structurele oplossing in plaats van een tijdelijke compensatieregeling voor pgb-houders (t.v.v. 36744-34)",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "efbb98a1-11b7-4bd2-a702-c28e08515469",
-    "title": "Gewijzigde motie van het lid Vermeer over werken aan de versterking van de financiële positie van spoedeisendehulpposten in regionale ziekenhuizen binnen het daarvoor geldende VWS-begrotingskader (t.v.v. 36915-27)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "a725eb80-4b37-4462-8304-c2a10f90f574",
     "title": "Motie van het lid Van Baarle over waarborgen dat problemen bij de overheid niet leiden tot het vergaand beperken van bewegingsvrijheid of dagbesteding ",
     "totaalStemmen": 0
@@ -1790,11 +1715,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "a675b02b-2cf4-4226-9ba0-c63330255bb5",
-    "title": "Gewijzigde motie van het lid Claassen over een escalatiemechanisme bij structurele schending van de zorgplicht (t.v.v. 29247-486)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "15e599b0-cead-4bb3-92e1-c6556b855b84",
     "title": "Motie van de leden Stoffer en Ceder over druk uitoefenen op het Syrische regime ",
     "totaalStemmen": 0
@@ -1815,18 +1735,8 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "719a2f43-c9f2-4926-b208-c873147de960",
-    "title": "Gewijzigde motie van het lid Bushoff over voorkomen dat gegevens bij zeldzame aandoeningen te herleiden zijn tot individuen (t.v.v. 36621-16)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "8a37dfd6-bf75-4aa5-b245-c8f883e1d2a3",
     "title": "Motie van het lid Van der Plas over het vuurwerkverbod voor de jaarwisseling 2026-2027 niet in laten gaan ",
-    "totaalStemmen": 0
-  },
-  {
-    "id": "771555f1-51bb-4157-93ad-c95f76671b31",
-    "title": "Gewijzigde motie van het lid Bikker c.s. over kinderen en jongeren met postcovid en andere PAIS niet vergeten (t.v.v. 25295-2248)",
     "totaalStemmen": 0
   },
   {
@@ -1938,11 +1848,6 @@ export const uitvalMoties = [
     "id": "46dbf4cd-4974-45ae-9576-d504b9fa5c8e",
     "title": "Motie van het lid Claassen over ongeoorloofd verzuim bij psychische of psychosociale klachten onverwijld melden aan de leerplichtambtenaar ",
     "totaalStemmen": 0
-  },
-  {
-    "id": "f59c4110-7c79-4885-a31c-d5acbd8ee24d",
-    "title": "Gewijzigde motie van het lid Gabriëls c.s. over bij het voldoen aan de KRW dwingender instrumentarium niet uitsluiten (t.v.v. 36600-J-8)",
-    "totaalStemmen": 147
   },
   {
     "id": "81851f4f-6ce6-4607-845b-d60ae9e8c12b",
@@ -2135,11 +2040,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "2001e539-b4fb-43eb-88ae-ece0785e6c00",
-    "title": "Gewijzigde motie van het lid Diederik van Dijk c.s. over maatregelen om de screening van asielzoekers binnen de norm van de EU-screeningsverordening te laten plaatsvinden (t.v.v. 35501-37)",
-    "totaalStemmen": 0
-  },
-  {
     "id": "7fdcea9d-c3b5-49de-9905-edad4f3eb5b5",
     "title": "Motie van het lid Van der Plas over bezien hoe COA-terreinen juridisch kunnen worden aangewezen als gebieden waar boa's en politie hun bevoegdheden kunnen uitoefenen",
     "totaalStemmen": 0
@@ -2290,11 +2190,6 @@ export const uitvalMoties = [
     "totaalStemmen": 0
   },
   {
-    "id": "d5936c34-2c5a-4e35-8269-fd90a18281f9",
-    "title": "Motie van de leden Kröger en Kostic over zo snel mogelijk de gedragscode natuurvriendelijk isoleren vaststellen",
-    "totaalStemmen": 0
-  },
-  {
     "id": "0f9c358c-8ead-43de-b081-feb32a86f583",
     "title": "Motie van het lid Steen c.s.",
     "totaalStemmen": 0
@@ -2318,5 +2213,1260 @@ export const uitvalMoties = [
     "id": "64b7f912-17b2-4031-8118-ff9a451c3c25",
     "title": "Motie van het lid Boomsma over bepleiten dat bij beoordeling van schendingen van artikel 3 nadrukkelijk sprake moet zijn van een minimumniveau aan ernst ",
     "totaalStemmen": 149
+  },
+  {
+    "id": "62691f74-55cf-4cdb-ac16-00906c877b44",
+    "title": "Motie van het lid Dobbe over in kaart brengen wat nodig is om meer goede stageplaatsen met voldoende ingeroosterde begeleiding te regelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "9a015105-caf6-4fa0-bc52-012308ca09be",
+    "title": "Gewijzigde motie van het lid Moinat c.s. over een toekomstplan voor jongeren die uitstromen uit jeugdhulp (t.v.v. 31839-1153)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "84afc791-06f3-491f-a25d-01909603a8b2",
+    "title": "Motie van de leden Dobbe en Westerveld over financiële tegemoetkoming voor jongeren op ZIKOS-afdelingen of in de gesloten jeugdzorg ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6360dfb0-a282-4ca1-a927-01a6da613ba3",
+    "title": "Motie van het lid Kostic over borgen dat aanpassingen in Europese wet- en regelgeving niet leiden tot afgezwakte regelgeving en extra schade aan gezondheid, natuur en milieu ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a4f75ae8-2752-446a-96db-05bf538b53e0",
+    "title": "Motie van het lid Raijer over borgen dat nieuwkomers het Nederlands voldoende beheersen voordat een definitief onderwijsadvies wordt gegeven ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "30c09290-9944-40b9-b946-076de57a239c",
+    "title": "Gewijzigde motie van het lid Van Asten c.s. over bij het aanwijzen van grootschalige woningbouwlocaties ook nieuwe locaties meenemen (t.v.v. 32847-1462)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "135ccc1c-c4eb-4836-b4e6-081177f83b4f",
+    "title": "Motie van het lid Hoogeveen over het onderzoek naar de effecten van de vliegbelasting actualiseren",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a881946d-b46c-43cf-983c-0a22e04ad216",
+    "title": "Motie van het lid Kathmann over de Kamer halfjaarlijks informeren over de ervaringen met de tijdelijke wet en de samenhang met de herziening van de Wiv ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "97e9fecb-53c2-4639-bc7c-0aaa5a8ee2dc",
+    "title": "Motie van het lid Müller over vergunningstrajecten voor SMR's versnellen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7e562114-5ffe-48b6-9a99-0afa43d4b45a",
+    "title": "Motie van het lid Van Leijen c.s. over de maatregelen wat betreft de WOZ-prijsopslag, minpunten voor buitenruimte en betere waardering voor rijksmonumenten spoedig naar de Raad van State sturen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "72ba1ef0-f12a-4fed-97ce-0b5a0428d21c",
+    "title": "Motie van de leden Moorman en Rooderkerk over een plan om het aanbod van beroepsprofielen op het vmbo in verschillende regio's te verhogen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "d439be3c-3bfe-4c51-9ce8-10313a741225",
+    "title": "Motie van het lid Jimmy Dijk over de inhoudingsmogelijkheid vanaf 1 januari 2026 afbouwen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "34729b46-14e0-4ef0-b147-11061540266f",
+    "title": "Motie van het lid Ceder over meer meesters behouden voor het onderwijs ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6f5378ae-fe20-4039-b5d5-1157aea04214",
+    "title": "Motie van het lid Boomsma over ervoor zorgen dat in elke regio thuisonderwijs kan worden geboden aan kinderen voor wie dit de beste oplossing is ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "5c9d3b71-fc5f-41fd-b68e-1234d5bbb7f5",
+    "title": "Motie van het lid El Abassi over een herstel- en ondersteuningsplan voor voormalige ZIKOS-jongeren en hun nabestaanden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c0a3136e-7698-479c-b492-12b5b299d8ea",
+    "title": "Motie van het lid Ceulemans over afzien van het voornemen om de financiering van UNRWA te verhogen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "716342e0-a656-4163-9219-14b0d2f876f5",
+    "title": "Motie van het lid Flach over zich bewust afzijdig houden van vermelding en erkenning van de internationale dag voor de bestrijding van islamofobie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f780ac8f-62d8-4db2-8618-1524693fab04",
+    "title": "Motie van het lid Nobel c.s. over bij herstructurering en nieuwbouw nadrukkelijk inzetten op de toevoeging van middenhuurwoningen in NPLV-gebieden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "975d54d0-14f7-4898-94cf-155ac82b6949",
+    "title": "Motie van het lid Dobbe over het in het licht van de criteria voor wapenexport onderzoeken en meewegen van eventuele signalen dat Nederlandse wapens in verkeerde handen vallen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "28ea609a-6f10-4406-895c-1821b8b1135f",
+    "title": "Motie van de leden Boomsma en Rooderkerk over een advies opstellen over Al-vrije best practices",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6a83d31b-2968-4603-bfc6-19d21b01dfca",
+    "title": "Motie van het lid Clemminck over geen steun geven aan bindende EU-verplichtingen op het terrein van onderwijs, gezinsbeleid en familierecht die verder gaan dan Europese verdragen toestaan ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "de01afa3-d98e-4b60-b4ff-1a6388f90a14",
+    "title": "Motie van het lid Van Oosterhout over zich in Europa inzetten voor het behoud van de bestaande CO2-reductie-eisen voor hernieuwbare waterstof ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "218e9542-11fc-48af-8a9b-1b276f671f5e",
+    "title": "Motie van de leden Diederik van Dijk en Vermeer over pleiten voor striktere toetsing op naleving van antisemitismebeleid bij toekenning van Horizon Europe-middelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3ceaee61-17d6-4ccd-9c19-1b9456466baa",
+    "title": "Motie van het lid Ergin over een concreet afbouwpad voor de toelaatbaarheidsverklaring praktijkonderwijs",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "64545fc3-5ad7-41e7-bda6-1bd9dbc538b2",
+    "title": "Motie van het lid Hoogeveen c.s. over inzetten op een kleinere Europese Commissie en een efficiëntere portefeuilleverdeling ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "5d930b8e-b9bc-479f-a0f1-1c011e2433e4",
+    "title": "Motie van het lid Becker over een kopgroep smeden voor het verminderen van regeldruk ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6d390e67-e18c-4719-b90d-1dbdf147d7c6",
+    "title": "Motie van het lid Kostić over onderzoeken of meer geld kan worden vrijgemaakt om de capaciteit en kennispositie van omgevingsdiensten op peil te brengen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "87cb9ea1-2002-45ce-a4fd-20217e076986",
+    "title": "Motie van het lid Van Oosterhout over publiekelijk erkennen dat de Borselse Voorwaarden ook expliciet zien op bedrijfsduurverlenging van de kerncentrale Borssele",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "13164b7a-3203-4542-aa4e-20290cae9f4c",
+    "title": "Motie van het lid Dassen over aanvullend 2,5 miljoen euro vrijmaken per 2026 zodat het Van Gogh Museum zijn noodzakelijke renovatie en modernisering kan uitvoeren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2cc6a872-c183-4ae2-a910-20497eae5f87",
+    "title": "Motie van het lid Stoffer over een visie ontwikkelen op het praktijk- en beroepsgericht funderend onderwijs die recht doet aan de veelzijdige kwaliteiten van leerlingen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "82dd103a-15ab-458f-a908-209e6926549c",
+    "title": "Motie van het lid Clemminck over de functie en het bureau van de Nationaal Coördinator tegen Discriminatie en Racisme opheffen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "05b441ce-5d84-484b-b96e-20c6136e5b0c",
+    "title": "Motie van het lid Kops over regelen dat de ANVS de beoordeling van de aanvraag van de wijzigingsvergunning laat aansluiten bij de toetsing van de huidige vergunning ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "05b35e63-53ac-4a70-a1f3-20c6b396cc7a",
+    "title": "Motie van het lid Flach over de nieuwbouwopslag met acht jaar verlengen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a4546538-4376-449c-bab6-2190172698bf",
+    "title": "Motie van de leden Krul en Dassen over het aanmoedigen van Hongarije om aan de afspraken met de Commissie te voldoen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "bf53f9ee-58df-445f-baef-2285a54593c7",
+    "title": "Motie van het lid Stultiens over de buffelboete ongedaan maken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6353bd9f-acf7-4882-b3cb-237d72402f66",
+    "title": "Motie van het lid Van Baarle over een gericht nationaal plan tegen moslimhaat ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "df638d85-052c-4041-bf45-23967a664bc9",
+    "title": "Motie van het lid Synhaeve c.s. over een wettelijke integriteitstoets voor bestuurders van jeugdzorg- en jeugdhulpaanbieders ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "4d5e860d-5556-4a33-a948-23b87aeb8709",
+    "title": "Motie van het lid Van Oosterhout over de investeringsbeslissing over een effectieve verlenging eerst aan de Kamer voorleggen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e1cf29d0-98c8-454c-9f6b-248efdb5a8c3",
+    "title": "Motie van het lid Boomsma over met een nieuw ambtsbericht over Syrië komen en het proces voor de terugkeer van Syriërs zo veel mogelijk versnellen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "974d5a7a-004f-4215-8d68-2491bd02c868",
+    "title": "Nader gewijzigde motie van het lid Ceulemans over verminderingen die ontstaan door kasschuiven niet opvullen (t.v.v. 36915-XVII-13)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2e6ca89d-09ac-4b6b-959e-280962627d5f",
+    "title": "Gewijzigde motie van de leden Ceulemans en Stoffer over afzien van het voornemen om de financiering van UNRWA te verhogen (t.v.v. 36915-XVII-14)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "25a33cde-e9dd-41bf-adcf-284e8acea1ce",
+    "title": "Motie van de leden Van den Berg en Flach over een routekaart voor procedureversnelling bij nucleaire projecten ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "59b8f6e4-6fea-4908-93bc-28c55ecf2ba6",
+    "title": "Motie van het lid Dassen over stoppen met het fiscaal bevorderen van bedrijven die actief een tweestatenoplossing ondermijnen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "599c51c3-bd36-4604-be9a-2c2a8bde4de4",
+    "title": "Motie van het lid Bamenga c.s. over streven naar toepassing van de discriminatietoets door zo veel mogelijk overheidsorganisaties ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2e111d57-fab0-43a5-9dce-2c489a609877",
+    "title": "Gewijzigde motie van de leden Moorman en Kostic over het wetsvoorstel Wijziging vermelding geslacht in geboorteakte alsnog aan de Kamer voorleggen (t.v.v. 36800-VIII-24)",
+    "totaalStemmen": 2756
+  },
+  {
+    "id": "7a3b2298-2132-4401-8688-31d275d95902",
+    "title": "Gewijzigde motie van het lid Mooiman over de mogelijkheid voor een eenmalige verlenging van twee jaar van de maximumtermijn van tijdelijke huurcontracten voor studenten meenemen in de aangekondigde verkenning naar tijdelijke huurcontracten (t.v.v. 27926-424)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "73bdc0a3-6472-41a9-9d11-3285181efc7e",
+    "title": "Motie van het lid Bikker c.s. over een onafhankelijke beoordeling van de Nederlandse pandemische paraatheid ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "20ef6714-a6e5-4d7b-a11e-3338c320b817",
+    "title": "Motie van het lid Moinat c.s. over strafrechtelijke vervolging van instellingen en personen die kinderen schade berokkenen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "ef065a85-3f54-4d33-89c2-33c30348b118",
+    "title": "Motie van de leden Van Baarle en Dijk over bepleiten dat bevroren gelden van gesanctioneerde kolonisten en organisaties worden ingezet voor humanitaire hulp en mensenrechten op de Westelijke Jordaanoever ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "087daf24-28e6-426d-9977-340b424c3a92",
+    "title": "Motie van het lid Kostic over een natuurvriendelijke inrichting van oevers als belangrijkste uitgangspunt bij de verdere aanpak van de Amerikaanse rivierkreeft ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "98ff3e15-94d9-4fc5-9bf9-36910fd6ff51",
+    "title": "Motie van het lid El Abassi over onderzoeken waar de opvolging van signalen van scholen, zorgverleners en andere professionals tekortschiet ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "274cf09b-7be6-4a13-965a-379a2e01244d",
+    "title": "Motie van het lid Armut c.s. over richtlijnen voor het terugdringen van schermgebruik in klaslokalen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "ab647029-ba70-4315-aa8f-3b553599233e",
+    "title": "Motie van de leden Moorman en Kathmann over de digitale autonomie van het funderend onderwijs vergroten",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c5285cde-0c3f-4132-adff-3c04ca126eea",
+    "title": "Motie van het lid Grinwis c.s. over alsnog een mkb-toets en een ATR-advies betreffende invoering van een pseudo-eindheffing voor fossiele leaseauto's ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7261365e-d69a-4d9e-9827-3ceff8dd3a0f",
+    "title": "Motie van de leden Van den Berg en Flach over een praktische versnellingsaanpak voor de eerste SMR-projecten ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6ffb5c9c-86bc-41d5-b6a0-3fa8e96b5e6f",
+    "title": "Motie van het lid Kröger over met hulporganisaties in de Palestijnse gebieden spreken over welke steun zij nodig hebben ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3d151fa6-bf42-47e8-9f5b-40afa50248d9",
+    "title": "Motie van het lid Moorman c.s. over het wetstraject voor rechtstreekse bekostiging van het praktijkonderwijs met prioriteit behandelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f1065166-e0d5-4a90-b92c-410bb3102ee4",
+    "title": "Motie van het lid Moorman c.s. over de Wet gratis schoolboeken omvormen tot een wet gratis leermiddelen waarin devices zijn opgenomen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1dbfc0e3-9a84-47ad-9013-417e03f33407",
+    "title": "Motie van het lid Dobbe over de 419 miljoen voor Oekraïne niet dekken uit de BHO-begroting",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "986c614a-0fac-40a3-9ebf-41df66109a25",
+    "title": "Motie van het lid Boomsma c.s. over haast maken met een strenge mobieltjesrichtlijn ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a39cf570-d508-4465-bce2-4556f3c27f92",
+    "title": "Motie van het lid Dobbe c.s. over extra capaciteit voor systematische monitoring van en advisering over aanvallen tegen zorg- en hulpverleners in situaties van gewapend conflict ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "18800732-08a9-4a7c-985e-45a20f1735f2",
+    "title": "Motie van het lid Kostić c.s. over pleiten voor heronderhandelingen van delen van het EU-ASEAN-verdrag om zo bindende normen vast te leggen voor milieu, arbeidsomstandigheden en vliegveiligheid ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6ae71f1c-0210-4784-a5c8-45a3ba5d8a56",
+    "title": "Motie van het lid Ceder over positieve mannelijke rolmodellen voor jongeren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "78ae9480-1c84-41b7-b668-45cf62f0cddd",
+    "title": "Gewijzigde motie van het lid Moinat c.s. over bij ernstige signalen van acute onveiligheid van kinderen één eindverantwoordelijke professional aanwijzen (t.v.v. 31839-1154)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f9cef681-72a9-4438-abd6-46b37146678a",
+    "title": "Motie van het lid Van Meetelen over de jeugdbescherming landelijk en eenduidig organiseren",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2591f7dd-4c56-4e37-9434-476e47629eaa",
+    "title": "Motie van het lid Kathmann over een positieve grondhouding voor een vergaand Europees voorkeursprincipe voor ICT-leveranciers ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e6dd010a-4212-4cbd-9eb7-47acd93b938e",
+    "title": "Motie van het lid Bamenga c.s. over zich in de EU inzetten voor sancties en maatregelen tegen personen, bedrijven en entiteiten die bijdragen aan oorlogsmisdrijven, het schenden van het VN-wapenembargo of het faciliteren van de oorlog in Sudan ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "23f60f65-6a91-45ee-bd05-48ac558886e5",
+    "title": "Motie van het lid Diederik van Dijk c.s over bepleiten dat er geen Horizon Europe-middelen toegekend worden aan instellingen die samenwerking met Israël uitsluiten",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1526341c-4785-440a-8aed-490fd7920145",
+    "title": "Motie van het lid Van Oosterhout over onderzoeken hoe toezicht en handhaving van de energiebesparingsplicht structureel verstevigd kunnen worden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "d6cdf457-8f82-43d8-bf2a-4af8b1a18195",
+    "title": "Motie van het lid Van Baarle over van 1 juli een nationale feestdag maken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "22b19c13-4b1e-45ee-9c3a-4b3e33f89e3b",
+    "title": "Gewijzigde motie van het lid Diederik van Dijk c.s. over proactief inbreng leveren voor een stresstest inzake de Vogel- en Habitatrichtlijn (t.v.v. 36866-17)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "4cee2ccf-c897-4243-a01f-4b3f9c1757aa",
+    "title": "Motie van het lid Van Houwelingen over ook meldingen over pleeggezinnen en gezinshuizen in behandeling laten nemen door Veilig Thuis ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8b5adfd1-d71e-4419-8b86-4bc56ea43a24",
+    "title": "Motie van het lid Chris Jansen over niet verder gaan dan dat wat verplicht is op grond van regelgeving",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "55976b48-d578-40a8-8fe7-4d7c2010158a",
+    "title": "Motie van de leden Podt en Bromet over bij de Europese Commissie pleiten tegen de voorgenomen verzwakking van de toetsing van bestrijdingsmiddelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "60bb3f6b-ee3d-45c1-bbec-4e0ad041875e",
+    "title": "Motie van de leden Flach en Grinwis over een strategische agenda voor uitrol van energie uit water",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "5396dac0-c1e8-4f95-bf84-4e53dc1a62cc",
+    "title": "Motie van het lid Clemminck over de wet-Nijboer afschaffen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "4d5f208f-b9bd-421f-b56b-4e8bbc058953",
+    "title": "Motie van het lid Van der Plas c.s. over binnen de EU eerst noodzakelijke aanpassingen bespreken voordat tot ratificatie wordt overgegaan ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "24570630-fc03-44ac-a81a-4f785793403f",
+    "title": "Motie van de leden Rooderkerk en Moorman over een voorstel uitwerken voor een veilige publieke Nederlandse AI-voorziening ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a6aff974-5ebf-42b8-82f1-502e3c2bf3c4",
+    "title": "Motie van het lid Dobbe over geen toename van Defensie-uitgaven totdat de onvolkomenheden zijn verholpen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "0d1e2fda-973a-494c-b971-503456233c9a",
+    "title": "Motie van het lid Kostić over het overwegen van de aanbevelingen van het EEB voor een ambitieuze nationale implementatie van de herziene RIE ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "05c31c19-47c2-4d52-8759-552278d31e15",
+    "title": "Motie van het lid Kröger over het uitvoeren van een impactassessment op de te verwachten gevolgen van het EU-ASEAN-luchtvaartverdrag ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2f2b8c1e-c258-44b9-8d20-5524d99610ec",
+    "title": "Motie van het lid Bushoff over onderzoeken hoe gereguleerde maximumtarieven in de eerstelijnsfysiotherapie kunnen worden ingevoerd ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2c3163b6-b7d0-48b6-a594-55ef33397a53",
+    "title": "Motie van de leden Jimmy Dijk en Beckerman over een plan waarmee uitgeponde huurwoningen kunnen worden opgekocht en ondergebracht bij wooncoöperaties of woningcorporaties",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "de55330b-79bf-4784-9123-567dca024ea0",
+    "title": "Motie van het lid Diederik van Dijk c.s. over proactief inbreng leveren voor een stresstest inzake de Vogel- en Habitatrichtlijn ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "da265b4e-7c40-4168-a064-5751dec43979",
+    "title": "Motie van het lid Tseggai over voorzien in de borging van een duurzame aanpak van discriminatie door versterking van centrale regie, coördinatie en actie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8233ba75-7f1b-40d7-8274-57fa9f9810ac",
+    "title": "Motie van het lid Mooiman over de Wet betaalbare huur dit jaar nog evalueren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f8f4c309-3f3f-4dbf-9881-59ee96e3b539",
+    "title": "Motie van het lid Becker c.s. over de aanbevelingen van de Europese Rekenkamer inzake traceerbaarheid en transparantie van RRF-gelden onderdeel maken van het Meerjarig Financieel Kader ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a514c06d-ba05-4eba-b582-5b7a467a7b28",
+    "title": "Motie van het lid Dobbe c.s. over de Ghanese wetgeving die inzet op strafbaarstelling en gevangenisstraf voor de lhbtiqa+-gemeenschap en bondgenoten publiekelijk veroordelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "fbc14362-58cf-4480-adce-5cc6bbd4f896",
+    "title": "Motie van de leden Ceder en Krul over bij de bezuiniging op de SOV de vergoedingen voor medische zorg ontzien",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "fc0cbf9f-6b51-434d-a9c7-5dcdb2c3c111",
+    "title": "Motie van het lid Podt c.s. over signalen van discriminerende lhbtiq+-content door grote onlineplatforms betrekken bij het toezicht op de naleving van de Digital Services Act ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "4df2b3d3-fcf0-46b0-92ef-5f48047bedf7",
+    "title": "Motie van de leden Kröger en Bamenga over met hulporganisaties in Sudan bezien hoe slachtoffers van seksueel geweld geholpen kunnen worden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3da6315a-a00c-409e-a5b4-624b5ed238d4",
+    "title": "Motie van het lid Vermeer over de Digitale Omnibus volledig steunen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "04c58d58-a295-4c85-9d89-6261fb646ffa",
+    "title": "Motie van het lid Van Baarle over inzetten op het terugdringen van de kosten van de verhuizing van het Europees Parlement tussen Brussel en Straatsburg ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "9cfe645e-d91f-471d-b9ff-6294a9bea3e7",
+    "title": "Motie van het lid Maeijer over de NVSHA als volwaardig partner laten aansluiten bij gesprekken over de budgetbekostiging SEH",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "298ab9b3-84cf-485a-b738-62c1b15186f0",
+    "title": "Motie van het lid Clemminck over aandacht voor culturele en religieuze factoren als oorzaken van dalende acceptatie bij de monitoring van de EU-lhbtiq+-strategie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7acccf61-3ceb-4035-a8bb-63e3a23484ac",
+    "title": "Motie van het lid Tony van Dijck over een plan van aanpak om het aantal ambtenaren fors te verminderen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "55b7dd15-d42b-4a87-adfe-64eb7bcfe209",
+    "title": "Motie van het lid Flach bezien wat de knelpunten zijn bij inzet van ijzerpoeder als duurzame brandstof",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7caf377c-f742-4491-959a-6541aadb718c",
+    "title": "Motie van de leden Boomsma en Van den Berg over de-industrialisering en weglek monitoren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3bf83b96-a10e-4ae0-afd1-655176d6ceb2",
+    "title": "Motie van de leden Moinat en Coenradie over een toekomstplan voor jongeren die uitstromen uit jeugdhulp",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "03f8f1dd-7d00-43e3-8234-6564d918f5c5",
+    "title": "Motie van het lid Coenradie over meer regie van de minister op spreiding en concentratie van ziekenhuizen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "790777c9-1cd8-4ac4-a0cb-65738d19ff0a",
+    "title": "Motie van het lid Van Meetelen over een landelijke spoedroute bij ernstige signalen van kindermishandeling",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "001cccf3-dff0-4961-b010-68094e6d1bdc",
+    "title": "Motie van het lid Van den Berg over fundamentele wijzigingen aan de AVG buiten de Omnibus Digitaal houden",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "37c2ccaa-3822-46d1-bd31-69ce14f56c90",
+    "title": "Motie van het lid Ergin over een plan van aanpak om de vmbo-praktijkexamens zichtbaarder en gelijkwaardiger te waarderen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "574c905c-3373-4da8-a6f7-6a3b15219a9d",
+    "title": "Motie van de leden Dobbe en Westerveld over in kaart brengen in hoeverre de Hervormingsagenda Jeugd de beoogde besparingen heeft opgeleverd ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "5d59dd4d-3df9-43a7-b895-6a79460c838a",
+    "title": "Motie van het lid Vermeer over een nationaal actieplan robotisering mkb ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "b9084ea3-316d-4122-9cd7-6a8f2719aa68",
+    "title": "Motie van het lid Zalinyan over minimaal 50% betaalbare nieuwbouw bij de gebiedsontwikkeling Valkenhorst ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e024d168-09c4-471b-8dc6-6eab54b2f2d9",
+    "title": "Motie van het lid Bamenga c.s. over Ketikoti opnemen in de vlaginstructie voor rijksgebouwen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "eb37b07c-1d60-4c0c-afeb-6edc95801563",
+    "title": "Motie van de leden Verkuijlen en Tijs van den Brink over het mogelijk maken dat het de AIVD en de MIVD wordt toegestaan om het systeem van positieve filtering zo spoedig mogelijk toe te passen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "797027a7-8f04-4f93-b9b6-6f8e175ededd",
+    "title": "Motie van de leden Beckerman en Tseggai over gepaste stagevergoedingen wettelijk verplicht maken voor alle onderwijsniveaus ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2737cb41-f0fe-40a1-9f35-70799cf0a824",
+    "title": "Motie van het lid Coenradie c.s. over risicovolle en complexe casussen binnen de jeugdbeschermingsketen dossiermatig doorlichten",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e3640dc8-2e2c-4d8b-9418-70af1faea689",
+    "title": "Motie van de leden Moinat en Coenradie over bij ernstige signalen van acute onveiligheid van kinderen één eindverantwoordelijke professional aanwijzen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a1e06103-23e5-4536-9407-711794a0df9d",
+    "title": "Gewijzigde motie van het lid Becker c.s. over de aanbevelingen van de Europese Rekenkamer inzake traceerbaarheid en transparantie van RRF-gelden onderdeel maken van het Meerjarig Financieel Kader (t.v.v. 36866-4)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2f9ab103-2671-4024-b3a2-72d6e6146bce",
+    "title": "Motie van het lid Diederik van Dijk over maatregelen om een ongewenste uitstroom van zorgmedewerkers te voorkomen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a8681b6a-de58-41a8-90d3-74d627be8831",
+    "title": "Motie van de leden Dobbe en Westerveld over wetswijzigingen om in te kunnen grijpen bij zorgaanbieders die essentiële zorg stopzetten zonder passend alternatief ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3bcf9643-2309-4518-9357-7509759498fb",
+    "title": "Motie van het lid Flach over via de nucleaire enveloppe in het Klimaatfonds of anderszins een significante bijdrage leveren aan IPCEI Nucleair ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "49b4d409-5a67-42d1-a898-76834717a843",
+    "title": "Motie van het lid Van Baarle over lokaal antidiscriminatiebeleid verplicht stellen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "08a178aa-42c0-4b05-9bd1-769ba6f59c50",
+    "title": "Motie van de leden Jimmy Dijk en Beckerman over tijdelijke huurcontracten niet opnieuw voeren of verbreden",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7b74b4c6-2089-49ec-b452-7967ff9c243c",
+    "title": "Motie van het lid Dobbe over een gouden aandeel om publieke zeggenschap te verkrijgen over defensiebedrijven ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "055fa93b-c55d-4cfb-a1d3-7a5f489b5de9",
+    "title": "Motie van het lid Ceulemans over verminderingen die ontstaan door kasschuiven niet opvullen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "46be95d5-a972-4373-b105-7db95e555978",
+    "title": "Motie van het lid Bushoff over voorkomen dat terhandstellingskosten in rekening worden gebracht bij herhaalrecepten waarbij geen aanvullende uitleg plaatsvindt dan wel noodzakelijk is",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "70403fe6-6530-49fb-894a-7dc18808e68c",
+    "title": "Motie van het lid Dassen over inzetten op de noodzakelijke verdragswijziging om het verhuizen van Brussel naar Straatsburg stop te zetten ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e2c36469-7ddf-4783-b840-7e2fbcd8a12d",
+    "title": "Motie van het lid Kisteman over uitwerken hoe techniekonderwijs in de onder- en bovenbouw van alle vmbo-vestigingen kan worden aangeboden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1a81c8b7-7f3f-49c7-a526-7e6531ab1afa",
+    "title": "Motie van de leden Vervuurt en Westerveld over het aantal ingediende, toegewezen en afgewezen meerzorgaanvragen per zorgkantoor monitoren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "0349ab92-1a59-447b-a8ed-7e7ad82d3ce0",
+    "title": "Motie van het lid El Abassi over versterking van de landelijke regie en doorzettingsmacht binnen de jeugdbescherming ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f6ddc87c-28ec-46fe-b57f-7f589d45f034",
+    "title": "Motie van het lid Maeijer over met werkgevers, zorgverzekeraars en vakbonden afspraken maken over eerstelijnsfysiotherapie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "697be89f-3c25-4ad9-9eb1-7f60f431e0df",
+    "title": "Motie van de leden Vijlbrief en Stultiens over de vrijstelling groen beleggen herstellen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "620f9616-ae82-4380-a664-813084f7ec81",
+    "title": "Motie van het lid Klos over gelijktijdig inzetten op stemrechtbeperking voor nieuwe lidstaten en afschaffing van het veto voor bestaande lidstaten ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "21903a8b-ccdb-48f3-b599-8157035c7ee6",
+    "title": "Gewijzigde motie van het lid Klos over de afhankelijkheid van Rusland met betrekking tot de kerncentrale in Borssele zo snel mogelijk afbouwen (t.v.v. 36847-18)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f95da0fc-6cee-41d7-8bd3-836c55ba9e38",
+    "title": "Motie van het lid Kostić over bindende normen voor veiligheid, milieu en arbeidsomstandigheden opnemen in toekomstige luchtvaartverdragen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2ac32bb2-79c0-414d-ab12-83b06cad2ec8",
+    "title": "Motie van het lid Van Meetelen c.s. over de strafmaat voor huiselijk geweld en kindermishandeling verhogen in de richtlijnen van het OM ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "363746be-b9df-489e-8a15-84c668c43b9a",
+    "title": "Motie van het lid Rooderkerk over zich hard maken voor tijdige uitwerking en implementatie van het voorgestelde flankerend beleid",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "f3b92478-6e73-4399-bf5e-859c70457f03",
+    "title": "Motie van de leden Dobbe en Westerveld over zo snel mogelijk ingrijpen bij ExpertCare ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1788232f-26b8-4a9b-9310-865ec2c2bce8",
+    "title": "Motie van het lid Bikkers over de AMvB die voortvloeit uit het wetsvoorstel aan de Kamer voorleggen voordat deze wordt vastgesteld ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "4713c4f9-48f9-4c7d-a358-88df1fa2ddc6",
+    "title": "Motie van het lid Van Houwelingen over bij een schoolwissel gedurende het schooljaar ook de onderwijsbekostiging verhuizen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8076101f-c8cf-452b-bb4d-89260148b2f6",
+    "title": "Motie van de leden Verkuijlen en Bamenga over een verhoging van de capaciteit van het Oekraïense energienetwerk in wintertijd ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "81931aab-4e5c-403c-b5d5-89a01aa7121c",
+    "title": "Motie van het lid Kisteman over onderzoeken hoe artikel 1 van de Grondwet altijd voorrang kan krijgen bij de invulling van burgerschapskerndoelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "46772771-220e-4c7f-970b-8a71f82457b0",
+    "title": "Motie van het lid Clemminck over onderzoek naar opvattingen, houdingen en gedragingen van Nederlanders ten aanzien van Joden en lhbtiq+-personen, uitgesplitst naar religieuze en culturele achtergrond ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "205d8ac5-f3a3-4a9f-968a-8accb82552af",
+    "title": "Motie van het lid Westerveld c.s. over in de statuten van de nieuwe stichting expliciete afspraken maken over jongereninspraak ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e8d031c5-429f-4a12-bbb4-8c359f88ec0d",
+    "title": "Motie van het lid Boomsma c.s. over voldoende tijd voor leraren voor het nakijken van schrijfopdrachten",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "16bd4eb6-4a51-49c3-ba39-8f10a0ce2eda",
+    "title": "Motie van het lid Moorman c.s. over leesbevordering in de lerarenopleiding en onder leraren",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c1892865-9540-4b69-9905-91cf78473d0b",
+    "title": "Motie van het lid Bromet over de centrale digitale registratie van gewasbeschermingsmiddelen toegankelijk maken voor toezichthouders, overheden en wetenschappers ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "5090e45c-023c-48bf-8847-91f53927bcfe",
+    "title": "Motie van het lid Jimmy Dijk over opties uitwerken om belastingen op energie te verlagen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "14ad7cbd-ac88-4b46-836f-93d1c06329b6",
+    "title": "Motie van het lid Chris Jansen over de beoordeling van gewasbeschermingsmiddelen met een laag risico prioritair behandelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "675befba-2aa7-45a8-b2b8-94ab04ebcb00",
+    "title": "Motie van het lid Ellian over drones die een dreiging vormen voor militaire installaties en justitiële locaties op veilige wijze neerhalen (herdruk)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c4016fd0-eb04-4ba8-99dd-94db97cf9668",
+    "title": "Motie van de leden Boomsma en Van den Berg over de Kamer halfjaarlijks informeren over de kostenraming, voortgang en haalbaarheid van het landelijke waterstofnetwerk ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a4c7cbdf-427b-4935-9292-96201cf39f2e",
+    "title": "Motie van de leden Clemminck en Keijzer over de verdere uitvoering van de nationale aanpak moslimdiscriminatie aanhouden",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "38cdf998-633f-49b3-a252-999e831d77a4",
+    "title": "Motie van het lid Beckerman over uitvoering geven aan de aanbevelingen van de Staatscommissie tegen Discriminatie en Racisme ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a0b33b6d-e2a6-4c94-b544-99a57ddb233a",
+    "title": "Motie van het lid Van Baarle over geen informatie uitwisselen met de VS die aangewend zou kunnen worden voor aanvallen die de VS uitvoeren in de Caraïbische Zee ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "398961a0-79c4-4d65-ab0d-99b3a30249be",
+    "title": "Motie van het lid Van Baarle over de Wet gedeeltelijk verbod gezichtsbedekkende kleding intrekken",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "01ac336c-e74a-4326-a460-9a75227504ec",
+    "title": "Motie van het lid Jimmy Dijk over 30 miljoen uit het Klimaatfonds inzetten voor energiearmoede",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "af3a1a8f-dd6e-4c5a-8825-9c7e1ba4351f",
+    "title": "Motie van het lid Rooderkerk c.s. over het wetstraject prioriteren waarmee mogelijk wordt gemaakt dat leerlingen in het praktijkonderwijs binnen het pr.o ook de entreeopleiding kunnen volgen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "83101a92-b52d-4285-bc33-9d4fa9fe674e",
+    "title": "Motie van de leden Bikker en Diederik van Dijk over voorkomen dat Nederlandse kennis en technologie over kiembaanmodificatie worden ingezet in het buitenland ",
+    "totaalStemmen": 2756
+  },
+  {
+    "id": "e0c06e73-cfca-495d-b908-9e225bd2d995",
+    "title": "Motie van het lid Verkuijlen c.s. over voortzetting van de ondersteuning van ondernemers via de SER ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "65676859-d3fd-424c-a07a-9f0d54ee541e",
+    "title": "Motie van het lid Flach over lastenverzwaringen door stijgende btw-kosten als gevolg van stijgende nettarieven voorkomen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c7f0e37c-e5ab-45ba-9813-a00e10cdeb17",
+    "title": "Motie van het lid Teunissen over maatregelen in kaart brengen om de activiteiten van Nederlandse agrobedrijven in Rusland aan banden te leggen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "b52d0962-e48b-45b9-a53e-a1b4a3d30fa4",
+    "title": "Motie van het lid Nobel c.s. over een landelijke maximumtermijn onderzoeken voor de instandhouding van middenhuurwoningen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "ccc74958-eb82-47ce-a41e-a2cf596db11a",
+    "title": "Motie van de leden Westerveld en Dobbe over wensen en behoeften van jongeren leidend laten zijn bij de uitwerking van het hersteltraject voor de gesloten jeugdzorg ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "cf565ae9-edbd-442f-bf02-a4ae5ea57628",
+    "title": "Motie van het lid Van Houwelingen over ervoor zorgen dat pleeggezinnen en gezinshuizen minstens eenmaal per jaar worden bezocht door de inspectie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "780b5a88-4623-4154-be7c-a575b2913711",
+    "title": "Motie van het lid El Abassi over de voorgenomen bezuinigingen op de jeugdzorg opschorten",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "d023de00-937e-4a92-9406-a63381c02207",
+    "title": "Motie van de leden Van den Berg en Flach over onderzoeken hoe SMR's kunnen bijdragen aan het verminderen van netcongestie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "470414a8-c007-49a2-b4d8-a6af5e379baa",
+    "title": "Motie van het lid Bromet over schadelijke vluchtige stoffen niet meer toestaan en biologische boeren compenseren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "9e24c236-bd35-40d5-a09a-a85c0309d23d",
+    "title": "Motie van het lid Van Baarle over de Discriminatietoets Beleidsprocessen periodiek doorlopen en de Discriminatietoets Publieke Dienstverlening verplicht stellen voor de publieke sector ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2003a9b6-90ee-4466-8889-a86ca7e7b76c",
+    "title": "Motie van het lid Vervuurt over de capaciteit voor het afnemen van de BI-toets bij de opleidingsinstellingen voor het jaar 2027 uitbreiden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "72a4bd21-ecfe-46a3-ad34-a8e0ae5602d3",
+    "title": "Motie van de leden Kathmann en Chakor over toezicht van de verkiezingsautoriteit op mogelijke beïnvloeding en inmenging ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "23ccde9d-4264-4a47-a05a-a91563ee2776",
+    "title": "Nader gewijzigde motie van het lid Van Meenen (t.v.v. 31497, nr.118) over een passende plek voor elke leerling ",
+    "totaalStemmen": 149
+  },
+  {
+    "id": "069ff447-2fc6-4857-ba7d-aae8db6f96a6",
+    "title": "Motie van het lid Claassen over alles op alles zetten om Nederlandse startups te behouden",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "faa952e1-37d5-4d96-b9a1-ab18c0c0f955",
+    "title": "Motie van het lid Keijzer over een derogatie van de Vogel- en Habitatrichtlijn, Kaderrichtlijn Water, Richtlijn Luchtkwaliteit en MER-richtlijn ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c7329cc7-45ff-4489-b982-ac27b9674f4e",
+    "title": "Motie van het lid Van Oosterhout over de vergunninghouder van kerncentrales verplichten een rapportage op te stellen over de geopolitieke risico's verbonden aan de brandstofketen van de kernenergiecentrale ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "691a5508-8fc6-4380-8b69-adcb18235cfa",
+    "title": "Motie van het lid Van Baarle over inzetten op een versobering van vergoedingen voor Europese politieke ambtsdragers ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "227d6924-f824-4947-8b04-adec04520b1d",
+    "title": "Motie van de leden Müller en Jumelet over voorwaarden uitwerken waaronder koolstofarme waterstof een rol kan spelen in de transitie naar groene waterstof ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "35769d59-05aa-4bed-adc8-aecb288b5d99",
+    "title": "Motie van het lid Klos c.s. over zich inzetten voor afschaffing van het vetorecht en invoering van meerderheidsbesluitvorming in het buitenland- en defensiebeleid van de EU",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "5bed1050-8309-4946-9aba-aef2d036ce8f",
+    "title": "Motie van het lid Piri c.s. over de eindverantwoordelijkheid voor de beheersing van fraude- en corruptierisico's beleggen bij een onafhankelijke functionaris ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "b5a8d291-77c3-4cf8-b0b9-aefa59861b0c",
+    "title": "Motie van het lid Dassen over inzetten op het afschaffen van de unanimiteitseis voor besluiten onder artikel 7 van het Verdrag en besluitvorming met gekwalificeerde meerderheid mogelijk maken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2f61f56d-8c92-40fe-985d-aff52316194f",
+    "title": "Motie van het lid Mooiman over de mogelijkheid om een tijdelijk huurcontract voor studenten eenmalig met twee jaar te verlengen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c55c1514-862c-42e0-adca-b053307c4ef6",
+    "title": "Motie van het lid Bamenga c.s. over aanvullende ondersteuning voor de bestrijding van ebola in de Democratische Republiek Congo en buurlanden ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6aed55ce-c702-4a8f-a06f-b07ed503bf14",
+    "title": "Motie van het lid Dekker over vetorecht zo veel mogelijk behouden en meerderheidsbesluitvorming zo veel mogelijk beperken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "15aeb160-7630-41f9-a6c9-b0b7519074d5",
+    "title": "Motie van het lid Moorman over het wetsvoorstel Wijziging vermelding geslacht in geboorteakte alsnog aan de Kamer voorleggen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "d80d80b7-1f06-4ea4-b846-b1a85e5ce70b",
+    "title": "Motie van het lid Grinwis c.s. over de continuïteit van het onderwijsprogramma School en Omgeving borgen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "bf25a1d6-8ade-45a2-9916-b33b9e94e970",
+    "title": "Motie van het lid Bikker c.s. over de voorbereidingen treffen voor volledige uitvoering van het rapport-Van Geel",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "161e686e-92e3-49e2-aac9-b34966ed3de1",
+    "title": "Motie van het lid Ceder over de prijsstijging voor elektriciteitstarieven in Caribisch Nederland per 1 januari 2026 ongedaan maken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3a319cdb-3c3e-4e0d-8700-b3f4fa350568",
+    "title": "Motie van het lid Dobbe over een onafhankelijke toezichtcommissie om uitgaven van Defensie te controleren",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "dc9b9cab-545e-40a0-89eb-b3fbf15ceb9e",
+    "title": "Motie van de leden Beckerman en Westerveld over de reiskostenvergoeding beschikbaar stellen voor alle bovenbouwleerlingen in het praktijkonderwijs ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e1b2f54a-65e2-48b6-af45-b637c79dad9f",
+    "title": "Motie van het lid Bushoff over een plan van aanpak voor het tekort aan stageplekken in de zorg",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8deae8bc-c062-4256-b346-b65b463e1d98",
+    "title": "Motie van de leden Stöteler en Hoogeveen over permanente vestiging van het Europees Parlement in Straatsburg",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a5221bbe-a97c-4bd4-83eb-b95e8280f6fd",
+    "title": "Gewijzigde motie van de leden Kathmann en Van Nispen over de subsidie voor Offlimits meerjarig verhogen in lijn met de stijging van het aantal meldingen van online kindermisbruik (t.v.v. 36600-VII-70)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "799b13ed-fb53-4897-8d06-b97d28040838",
+    "title": "Gewijzigde motie van de leden Beckerman en Tseggai over gepaste stagevergoedingen wettelijk verplicht maken voor alle onderwijsniveaus (t.v.v. 31524-685)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3125d67e-6e5d-4027-8444-bc1df3b8b168",
+    "title": "Motie van het lid Van der Lee over \"geostrategisch\" als uitgangspunt toevoegen aan het Nederlandse EU-uitbreidingsbeleid ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6a120614-054d-4684-a902-bcdee5c6bf2a",
+    "title": "Gewijzigde motie van het lid Van Oosterhout over de Kamer informeren over de geopolitieke risico's verbonden aan de brandstofketen van de kernenergiecentrale voordat een besluit wordt genomen over bedrijfsduurverlenging (t.v.v. 36847-10)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "97136efb-5478-4bc3-929b-be5d7313141b",
+    "title": "Motie van het lid Klos over voorkomen dat aanpassingen in het toetredingsproces het pad naar volledig EU-lidmaatschap belemmeren of vertragen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "dc3864d5-6d8e-4b8c-a925-bebb3fbaca16",
+    "title": "Motie van het lid Wijen-Nass over voorkomen dat politiebureaus in de regio sluiten ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6c8f13c5-0481-46b7-a13d-bf2fdf422952",
+    "title": "Motie van de leden Lohman en Kröger over de bezuinigingen op multilaterale gezondheidsorganisaties zo veel mogelijk herstellen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8e138876-1230-4430-adc0-c2cfb920bfd6",
+    "title": "Motie van het lid Keijzer over stoppen met beleid gericht op diversity, equity and inclusion",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "ec863680-46b0-42c6-b74e-c2e6bbf53934",
+    "title": "Motie van het lid Ceder c.s. over onderzoek doen naar verleden en toekomst van Molukkers in Nederland en verkennen hoe op gepaste wijze recht kan worden gedaan aan de Molukse gemeenschap ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1f22e0fa-ee07-449b-bc5b-c79f47ba4661",
+    "title": "Motie van het lid Mooiman over capaciteitsproblemen bij de gemeentelijke handhaving van huurwetten voorkomen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6038bb6f-1a72-4189-9278-c8e7e6cc57db",
+    "title": "Motie van het lid Ceder over het programma Toekomst Religieus Erfgoed ook na 2025 voortzetten",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "17e5a0fc-54fe-4036-b40f-c97e6183d96f",
+    "title": "Motie van de leden De Hoop en Grinwis over geen plannen introduceren die tijdelijke huurcontracten weer toestaan ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e401abb3-767a-4e39-a8dc-c98a379c436a",
+    "title": "Motie van het lid Stöteler over de aanbevelingen in het kader van het Europees semester retourneren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "426a5ca3-d475-4784-8b84-cb84ba952c55",
+    "title": "Motie van het lid Verkuijlen over samenwerken met de private sector bij de uitvoering van de grondstoffenstrategie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "bda5d31e-352c-45cd-af28-cbc0a0c1a347",
+    "title": "Motie van het lid Dassen over de grenscontroles voor de zomer afbouwen en daarna volledig stopzetten ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7f552112-a448-4757-944b-cd4fcfeaa4dd",
+    "title": "Motie van het lid Dobbe over inzichtelijk maken hoeveel van het Nederlandse publieke geld wegvloeit naar de winsten van de wapenindustrie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "57c25efd-6793-4269-89be-cd78b2c2e1b5",
+    "title": "Motie van de leden Westerveld en Dobbe over gespecialiseerde centra voor kinderen en jongeren met complexe psychische problemen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8f6a220a-d6a5-4f80-b86c-d0845f9992d0",
+    "title": "Motie van het lid Van Baarle over het antidiscriminatiebeleid uitzonderen van rijksbrede bezuinigingen, taakstellingen of ombuigingen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "dc8b19bf-0867-4641-bca9-d1be652b548b",
+    "title": "Motie van het lid Klos over de afhankelijkheid van Rusland met betrekking tot de kerncentrale in Borssele zo snel mogelijk beëindigen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "9ebe9df7-3b28-4657-a674-d32da805f2b4",
+    "title": "Motie van het lid Zwinkels over een voorwaarde opnemen van lokale binding voor verenigingen en stichtingen die een ontheffing aanvragen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "67159441-f256-4a39-bd57-d448d62d7302",
+    "title": "Motie van het lid Grinwis c.s. over tot het aantreden van het nieuwe kabinet doorgaan met het zevende actieprogramma Nitraatrichtlijn ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "8d7f80b1-644c-4067-8eab-d4914155887a",
+    "title": "Gewijzigde motie van het lid Moorman c.s. over de Wet gratis schoolboeken omvormen tot een wet gratis leermiddelen waarin devices zijn opgenomen (t.v.v. 32034-74)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6bf9eb4e-ccea-460d-b11e-d87265106049",
+    "title": "Motie van het lid Klos over waarborgen dat voorwaarden en eventuele steunmaatregelen voor blauwe waterstof niet leiden tot extra aardgasimport of -afhankelijkheid ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7bde570e-0a69-4229-ae4b-dc52a67c1cb1",
+    "title": "Motie van het lid Van Baarle over pleiten voor het opschorten van alle EU-verdragen met Israël ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "cb3d04c5-fb48-42c7-a60d-de4b01109658",
+    "title": "Motie van het lid Kostić over impactassessments uitvoeren voordat luchtvaartovereenkomsten ter ratificatie aan de Kamer worden gestuurd ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "690ac145-d4e4-4f26-b3d3-df6b93d89d6d",
+    "title": "Motie van het lid Bikkers over de AMvB die voortvloeit uit het wetsvoorstel zodanig vormgeven dat de administratieve lasten en nalevingskosten voor bedrijven worden beperkt",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "7677af1b-b02e-438c-b898-dfa62b6b7a0c",
+    "title": "Motie van het lid Schenk over bij werving en selectie binnen de Rijksoverheid alleen selecteren op kwaliteit, geschiktheid en vakbekwaamheid ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c2c20687-c85f-4cb3-97f4-e04e6ed0f8c0",
+    "title": "Motie van de leden Keijzer en Hoogeveen over onder geen enkele omstandigheid, in geen enkele vorm en op geen enkel beleidsterrein instemmen met de afschaffing, beperking of uitholling van het vetorecht binnen de Europese Unie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "88912e30-31fe-4fe3-837f-e0514ba82297",
+    "title": "Gewijzigde motie van het lid Mutluer over een nationaal actieprogramma met een regeringscommissaris gendergerelateerd geweld met een breder mandaat in lijn met de EU-richtlijn (t.v.v. 29279-969)",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "78eb5f81-3361-46c8-a3ec-e0612a57c2b6",
+    "title": "Motie van het lid Klos over een afbouwpad voor Russische nucleaire brandstoffen en verrijkingsdiensten via REPowerEU ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "bf25c262-17a4-45b6-a9d0-e0a63c9b0a74",
+    "title": "Motie van het lid Dobbe c.s. over de loonkloof in kaart brengen tussen de zorgsector, de publieke sector en de marktsector ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "cdd4ac3b-6c0c-461c-bbca-e0dd89e69ce6",
+    "title": "Motie van de leden De Hoop en Grinwis over de WOZ-cap niet versoepelen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1115a7ec-525c-4720-89be-e29f999da12b",
+    "title": "Motie van het lid Mooiman over de invloed van lokale eisen op de beschikbaarheid en toegankelijkheid van woningen in de middenhuursector ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "641eaaea-d305-41db-b5a4-e48a535808fd",
+    "title": "Motie van het lid Jumelet over een analyse van de cumulatieve effecten van klimaat- en energiemaatregelen op de energierekening ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "51f7bf22-0a0d-4c63-9fb5-e4b137dbbc3b",
+    "title": "Motie van het lid Van Houwelingen over stoppen met onderwijsbeleid gericht op \"kansrijk adviseren\"",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "486108a5-2888-4d24-8fd3-e4bf73de6692",
+    "title": "Motie van de leden El Abassi en Coenradie over vier wettelijk verplichte contactmomenten per jaar bij pleegoudervoogdij",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "138cb78f-522a-40fc-a160-e4d4a01ce32f",
+    "title": "Motie van het lid Diederik van Dijk c.s. over een passende overgangsregeling voor de groep K&J-psychologen die niet aan de slag kunnen als gz-psycholoog ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3946bfef-afac-4a59-8bd2-e6c064b23af4",
+    "title": "Motie van het lid Coenradie over stoppen met de afbouw van geslotenjeugdhulpplekken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "87f222b6-faf4-4e16-92a6-e766b9364320",
+    "title": "Motie van het lid Teunissen c.s. over in de komende aanpassing van de Mijnbouwwet vastleggen dat mijnbouw binnen UNESCO-erfgoed niet is toegestaan ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6e616657-d383-426e-be6d-e8074ced376c",
+    "title": "Motie van de leden Dobbe en Diederik van Dijk over in kaart brengen op welke punten de bewijslast in de zorg kan worden omgekeerd ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "2f95082b-3b0e-4567-bde8-e976add6d7db",
+    "title": "Motie van het lid Claassen over bewerkstelligen dat het Groeiplan MedTech als thema wordt omarmd ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "87c19972-c212-4126-94c7-eb1e525de861",
+    "title": "Motie van het lid Clemminck over de werking van de WOZ-cap verder beperken ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "86c83b8c-388b-48e5-b960-eb304af3ab14",
+    "title": "Motie van het lid Van den Berg over bij de financiering van kernenergie de uitgangspunten van SDE++ of een opvolgend instrument meenemen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "23fe85fa-779a-4387-a8ef-ecaa8f208b38",
+    "title": "Motie van het lid Van der Burg c.s. over instemmen met het EU-Mercosur-handelsakkoord en zich inzetten voor een spoedige totstandkoming en inwerkingtreding van het verdrag",
+    "totaalStemmen": 2756
+  },
+  {
+    "id": "8a16ed7e-6380-41aa-af6c-ed7d9c3a81c1",
+    "title": "Motie van het lid Van Baarle over een wetsvoorstel dat het gebruik en verspreiden van nazisymbolen, -groeten en -leuzen zelfstandig strafbaar stelt",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "0cd00c4e-4eaf-4e1b-a13b-ee7f936db2e3",
+    "title": "Motie van het lid Zalinyan over sloop van het SoZa-gebouw voorkomen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "6de936aa-8dad-41cd-aace-efadc945650d",
+    "title": "Motie van het lid Clemminck over significant meer middelen vrijmaken binnen het NPLV voor de aanpak van criminaliteit en culturele integratie ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "700ebc77-117b-4ea3-837c-f1253d543c92",
+    "title": "Motie van het lid Clemminck over de WWS-puntentabel jaarlijks indexeren met de CPI plus 1%",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c9fbbfa9-506f-45bc-aa64-f1387af4f7b6",
+    "title": "Motie van het lid Mathlouti over bij de verdere uitwerking van het ontheffingsstelsel handhaafbaarheid nadrukkelijk meewegen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "98be77b3-339e-4a6c-ab9f-f16ad32fdce0",
+    "title": "Motie van het lid Stoffer over informele ondersteuning van gezinnen wettelijk borgen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "aac87c00-e9db-478e-ae9d-f216904116f4",
+    "title": "Motie van de leden Van den Berg en Boomsma over bij de strategischgasbeleidbrief een uitvoeringstabel voegen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "abd66c1c-63c0-4d21-8035-f2d4fbc352c0",
+    "title": "Motie van het lid Ceder c.s. over onderzoek naar het risicoprofiel dat wordt gebruikt bij visumaanvragen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "a3aeaf84-1ddf-431a-87dd-f346e29cbf5c",
+    "title": "Motie van de leden Dobbe en Wiersma over zorgen voor gereguleerde tarieven in de fysiotherapie",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "db182030-be5f-4291-841c-f3a328340d95",
+    "title": "Gewijzigde motie van het lid Kisteman over onderzoeken hoe kan worden gewaarborgd dat gelijke behandeling nooit kan worden geschonden door de levensbeschouwelijke richting van een school (t.v.v. 36699-29)",
+    "totaalStemmen": 2756
+  },
+  {
+    "id": "241cc413-c994-4ad2-bc82-f3f526a9a9f4",
+    "title": "Motie van het lid Ceder over onderzoek naar de rol van positief vaderschap ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "93a39f29-5b42-4723-bcb5-f4f797e9393c",
+    "title": "Motie van het lid Maeijer over in overleg met de sector een landelijke imagocampagne uitrollen over de zorg ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "d36e8fcd-43b9-4638-80ef-f5963bc32490",
+    "title": "Motie van de leden Boomsma en Van den Berg over met een aantal realistische scenario's komen voor zon- en windinstallaties in de periode 2030-2035 ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "d9e6a6b2-6304-4bc9-acc6-f69779fc56f0",
+    "title": "Motie van het lid Coenradie over de OVV scherper afbakenen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c6582a88-c61a-4387-8bd5-f75d4d205489",
+    "title": "Motie van het lid Westerveld c.s. over complexe zorgregelingen versimpelen voor gezinnen",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "4cf6e9cf-6e03-4ec8-b675-f938d31e7bfd",
+    "title": "Motie van het lid Van Leijen c.s. over de maatregel om tijdelijke huurcontracten voor alle studenten toe te staan als wet in formele zin aan de Kamer voorleggen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "bedd57bc-2805-4d13-b2a8-f9ccc5b74bf5",
+    "title": "Motie van de leden Van den Berg en Flach over onderzoeken hoe nnovatieve civiele kernenergie onderdeel kan worden van de IPCEI en het daarbij behorende staatssteunkader ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "3ffb2681-a66c-474e-bd16-fa1242da6d5a",
+    "title": "Motie van het lid Tijmstra over het belang van gezamenlijke scholing van spoedzorg en ggz onder de aandacht brengen bij het Zorginstituut Nederland ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "e0f4dbce-a142-40a0-813f-fa9cbc150baf",
+    "title": "Motie van het lid Vervuurt over onderzoeken of een leenfaciliteit kan worden ingezet om de kosten van de BI-toets tijdelijk voor te financieren ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "1ee3a18c-58cd-461b-a912-fb93ace6cadb",
+    "title": "Motie van het lid Van Brenk over het mogelijk maken dat een Wlz-indicatie wordt ingetrokken",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "c96f595c-ca5f-48d0-898a-fc4a87e5f9f0",
+    "title": "Motie van de leden Ceder en Bamenga over verkennen hoe relevante vertrouwelijke informatie over dreigingen kan worden gedeeld met parlementariërs van de CAS-landen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "755bd7c8-5a03-4d1f-ba52-fce54298339c",
+    "title": "Motie van het lid Synhaeve c.s. over jeugdhulpaanbieders en hun medewerkers altijd vooraf screenen ",
+    "totaalStemmen": 0
+  },
+  {
+    "id": "daacb305-3f4d-4eba-98e9-fe5d2d73f232",
+    "title": "Motie van de leden Van Brenk en Bushoff over verpleeghuisbewoners met hun Wlz-indicatie aanspraak laten maken op een gordelroosvaccinatie ",
+    "totaalStemmen": 0
   }
 ];

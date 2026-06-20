@@ -40,6 +40,14 @@ export default function FilterPage() {
     ),
   ];
 
+const openFeedback = () => {
+  posthog.capture("feedback_clicked");
+
+  window.open(
+    "https://tally.so/r/812e0O",
+    "_blank"
+  );
+};
 
 const [isMobile, setIsMobile] = useState(false);
 
@@ -210,7 +218,16 @@ posthog.capture('voting session started', {
       : "h-[400px] -mt-2"
   }`}
 >
-        <p className="text-white font-semibold text-lg leading-snug">
+<div className="w-full flex justify-end mb-2">
+  <button
+  onClick={openFeedback}
+  className="text-white/60 text-xs font-bold hover:text-white transition"
+>
+  💬 Feedback
+</button>
+</div>       
+
+ <p className="text-white font-semibold text-lg leading-snug">
             Stel hier je filters in om moties te selecteren waarop je wilt stemmen.
           </p>
 

@@ -44,15 +44,6 @@ export default function WelcomePage() {
 
   const [isMobile, setIsMobile] = useState(false);
 
-const openFeedback = () => {
-  posthog.capture("feedback_clicked");
-
-  window.open(
-    "https://tally.so/r/812e0O",
-    "_blank"
-  );
-};
-
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
     check();
@@ -195,16 +186,7 @@ const openFeedback = () => {
             isMobile ? "h-[520px] -mt-16" : "h-[400px] -mt-2"
           }`}
         >
-<div className="w-full flex justify-end mb-2">
-  <button
-  onClick={openFeedback}
-  className="text-white/60 text-xs font-bold hover:text-white transition"
->
-  💬 Feedback
-</button>
-</div>        
- 
-	 {/* BRAND */}
+          {/* BRAND */}
           <h1 className="text-4xl font-bold tracking-tight text-white mb-2 text-center">
             StemVisie
           </h1>

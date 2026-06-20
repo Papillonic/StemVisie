@@ -42,6 +42,15 @@ export default function VotingPage() {
   const storedVotes = localStorage.getItem("voting_userVotes");
   const storedIndex = localStorage.getItem("voting_index");
 
+const openFeedback = () => {
+  posthog.capture("feedback_clicked");
+
+  window.open(
+    "https://tally.so/r/812e0O",
+    "_blank"
+  );
+};
+
   const amendments: Amendment[] =
     amendmentsFromNav.length > 0
       ? amendmentsFromNav
@@ -221,7 +230,16 @@ useEffect(() => {
       : "h-[400px] -mt-2"
   }`}
 >
-          <div className="flex justify-between items-center">
+       
+<div className="w-full flex justify-end mb-2">
+  <button
+  onClick={openFeedback}
+  className="text-white/60 text-xs font-bold hover:text-white transition"
+>
+  💬 Feedback
+</button>
+</div>
+   <div className="flex justify-between items-center">
             <div className="flex gap-2">
               {["full", "short", "simple"].map((mode) => (
                 <button

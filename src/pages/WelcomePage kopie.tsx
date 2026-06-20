@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { posthog } from "../lib/posthog";
+import { posthog} from "../lib/posthog";
 
 import Layout from "../components/Layout";
 import GlassCard from "../components/GlassCard";
@@ -23,9 +23,9 @@ import {
 export default function WelcomePage() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    posthog.capture("landing_viewed");
-  }, []);
+useEffect(() => {
+  posthog.capture("landing_viewed");
+}, []);
 
   const today = new Date();
 
@@ -42,28 +42,23 @@ export default function WelcomePage() {
     []
   );
 
-  const [isMobile, setIsMobile] = useState(false);
+const [isMobile, setIsMobile] = useState(false);
 
-const openFeedback = () => {
-  posthog.capture("feedback_clicked");
 
-  window.open(
-    "https://tally.so/r/812e0O",
-    "_blank"
-  );
-};
 
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
+useEffect(() => {
+  const check = () => setIsMobile(window.innerWidth < 768);
+  check();
+  window.addEventListener("resize", check);
+  return () => window.removeEventListener("resize", check);
+}, []);
 
   const partyAbbreviations = useMemo(
     () => [
       ...new Set(
-        chamberLayout.seats.map((s) => s.partyAbbreviation)
+        chamberLayout.seats.map(
+          (s) => s.partyAbbreviation
+        )
       ),
     ],
     [chamberLayout]
@@ -77,7 +72,7 @@ const openFeedback = () => {
         id: abbr,
         name: partyMap[abbr] ?? abbr,
         abbreviation: abbr,
-        color: abbr,
+	color: abbr,
         votes: {
           welcome: {
             voor: random < 0.5 ? 1 : 0,
@@ -98,6 +93,8 @@ const openFeedback = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  // ===== QUICK START SETS =====
 
   const latestAmendments = [...mockAmendments]
     .sort(
@@ -158,22 +155,21 @@ const openFeedback = () => {
     },
   ];
 
-  const startVoting = (
-    amendments,
-    quickStartLabel
-  ) => {
-    posthog.capture("voting_started", {
-      quick_start: quickStartLabel,
-      amendment_count: amendments.length,
-    });
+const startVoting = (
+  amendments: typeof mockAmendments,
+  quickStartLabel?: string
+) => {
+  posthog.capture('voting_started', {
+    quick_start: quickStartLabel,
+    amendment_count: amendments.length,
+  });
 
-    navigate("/voting", {
-      state: {
-        amendments,
-      },
-    });
-  };
-
+  navigate("/voting", {
+    state: {
+      amendments,
+    },
+  });
+};
   return (
     <Layout>
       {/* 🔵 Halve cirkel */}
@@ -190,37 +186,21 @@ const openFeedback = () => {
 
       {/* 🟢 Content */}
       <div className="relative flex flex-col items-center w-full px-4 pb-32">
-        <GlassCard
-          className={`w-full p-6 overflow-y-auto space-y-4 ${
-            isMobile ? "h-[520px] -mt-16" : "h-[400px] -mt-2"
-          }`}
-        >
-<div className="w-full flex justify-end mb-2">
-  <button
-  onClick={openFeedback}
-  className="text-white/60 text-xs font-bold hover:text-white transition"
+   <GlassCard
+  className={`w-full p-6 overflow-y-auto space-y-4 ${
+    isMobile
+      ? "h-[520px] -mt-16"
+      : "h-[400px] -mt-2"
+  }`}
 >
-  💬 Feedback
-</button>
-</div>        
- 
-	 {/* BRAND */}
-          <h1 className="text-4xl font-bold tracking-tight text-white mb-2 text-center">
-            StemVisie
+ <h1 className="text-4xl font-bold tracking-tight text-white mb-4 text-center">
+            Welkom
           </h1>
 
-          {/* BETA LABEL */}
-          <p className="text-white/60 text-sm font-bold text-center mb-4">
-            Beta • Publieke testversie
-          </p>
-
-          {/* SUBTITLE */}
-          <h2 className="text-xl font-bold text-white text-center mb-4">
-            Welkom
-          </h2>
-
           <p className="text-white font-bold leading-7 max-w-2xl mb-6 mt-2 text-center mx-auto">
-            Stem op echte moties uit de Tweede Kamer en ontdek welke partijen het meest overeenkomen met jouw keuzes.
+            Stem op echte moties uit de Tweede Kamer alsof je
+            zelf in het parlement zit. Vergelijk jouw
+            stemgedrag met dat van politieke partijen.
           </p>
 
           {/* ⚡ QUICK START */}
@@ -294,9 +274,9 @@ const openFeedback = () => {
           <button
             className="w-auto px-6 py-2 text-sm bg-blue-500 rounded-lg text-white hover:bg-blue-600 transition-colors font-bold shadow-lg shadow-blue-500/30"
             onClick={() => {
-              posthog.capture("filter_flow_started");
-              navigate("/filter");
-            }}
+  posthog.capture("filter_flow_started");
+  navigate("/filter");
+}}
           >
             Zelf filters kiezen
           </button>

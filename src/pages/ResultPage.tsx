@@ -41,6 +41,15 @@ export default function ResultPage() {
     return stored ? JSON.parse(stored) : [];
   });
 
+const openFeedback = () => {
+  posthog.capture("feedback_clicked");
+
+  window.open(
+    "https://tally.so/r/812e0O",
+    "_blank"
+  );
+};
+
   const hasVotes = userVotes.length > 0;
 
   // ===== FIX 2: SYNC STATE (ONLY LOGIC) =====
@@ -196,6 +205,15 @@ useEffect(() => {
       : "h-[400px] -mt-2"
   }`}
 >
+
+<div className="w-full flex justify-end mb-2">
+  <button
+  onClick={openFeedback}
+  className="text-white/60 text-xs font-bold hover:text-white transition"
+>
+  💬 Feedback
+</button>
+</div>
           {!hasVotes && (
             <div className="mb-4 p-3 rounded-lg bg-yellow-500/20 border border-yellow-400/30 text-center">
               <p className="text-yellow-200 font-bold text-sm">

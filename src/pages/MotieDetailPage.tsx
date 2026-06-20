@@ -42,6 +42,15 @@ export default function MotieDetailPage() {
 
   const [index, setIndex] = useState(0);
 
+const openFeedback = () => {
+  posthog.capture("feedback_clicked");
+
+  window.open(
+    "https://tally.so/r/812e0O",
+    "_blank"
+  );
+};
+
   const current = amendments[index];
 
   if (!current) {
@@ -194,7 +203,16 @@ const formattedDate = new Date(current.stemDatum ?? "").toLocaleDateString(
       : "h-[400px] -mt-2"
   }`}
 >
-         {/* TOP INFO */}
+ 
+<div className="w-full flex justify-end mb-2">
+  <button
+  onClick={openFeedback}
+  className="text-white/60 text-xs font-bold hover:text-white transition"
+>
+  💬 Feedback
+</button>
+</div>
+        {/* TOP INFO */}
           <div className="flex items-center justify-between text-sm mb-4 gap-2 flex-wrap">
             <div className="font-bold text-white">
               {resultText}  · {formattedDate}

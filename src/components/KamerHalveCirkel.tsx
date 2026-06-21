@@ -2,11 +2,19 @@
 
 import { PARTY_HOUSE_STYLES } from "../lib/partyHouseStyles";
 
+//import type {
+//  Party,
+//  ChamberLayoutPeriod,
+//  SeatAssignment,
+//} from "../types";
+
+import type { Party } from "../types";
+
 import type {
-  Party,
   ChamberLayoutPeriod,
   SeatAssignment,
-} from "../lib/schema";
+} from "../lib/kamerLayouts";
+
 
 interface KamerHalveCirkelProps {
   parties: Party[];

@@ -13,7 +13,7 @@ import {
   kamerLayoutVanafFeb2026,
 } from "../lib/kamerLayouts";
 
-import type { Amendment } from "../lib/schema";
+import type { Amendment } from "../types";
 
 
 export default function FilterPage() {
@@ -34,6 +34,8 @@ export default function FilterPage() {
     []
   );
 
+const amendments = mockAmendments;
+
   const partyAbbreviations = [
     ...new Set(
       chamberLayout.seats.map((s) => s.partyAbbreviation)
@@ -49,6 +51,12 @@ const openFeedback = () => {
   );
 };
 
+amendments.sort((a, b) => {
+  const dateA = new Date(a.stemDatum ?? 0).getTime();
+  const dateB = new Date(b.stemDatum ?? 0).getTime();
+
+  return dateB - dateA;
+});
 const [isMobile, setIsMobile] = useState(false);
 
 useEffect(() => {
@@ -138,11 +146,23 @@ const geldigeIndieners = (
       )
         return false;
 
-      if (
-        (dateFrom && new Date(a.stemDatum) < new Date(dateFrom)) ||
-        (dateTo && new Date(a.stemDatum) > new Date(dateTo))
-      )
-        return false;
+      if (dateFrom) {
+  if (
+    !a.stemDatum ||
+    new Date(a.stemDatum).getTime() < new Date(dateFrom).getTime()
+  ) {
+    return false;
+  }
+}
+
+if (dateTo) {
+  if (
+    !a.stemDatum ||
+    new Date(a.stemDatum).getTime() > new Date(dateTo).getTime()
+  ) {
+    return false;
+  }
+}
 
       return true;
     });

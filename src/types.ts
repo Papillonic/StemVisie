@@ -6,7 +6,7 @@ export interface Amendment {
   fullDescription?: string;
   simplified?: string;
   Soort?: string;
-  Categorie?: string[];
+  Categorie?: string;
   stemDatum?: string;
   indieners?: {
     naam: string;
@@ -22,9 +22,27 @@ export interface VoteSubmission {
 }
 
 export interface Party {
-  id: number;
+  id: string;
   name: string;
   abbreviation: string;
-  color: string;
-  votes: Record<string, { voor: number; tegen: number; onthouden: number }>;
+  color: string;votes: Record<
+  string,
+  {
+    voor: number;
+    tegen: number;
+    onthouden: number;
+  }
+>;
+}
+export interface SeatAssignment {
+  index: number;
+  x: number;
+  y: number;
+  partyId?: string;
+  label?: string;
+}
+export interface ChamberLayoutPeriod {
+  id: string;
+  name: string;
+  seats: SeatAssignment[];
 }

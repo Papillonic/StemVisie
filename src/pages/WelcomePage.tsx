@@ -15,6 +15,11 @@ import {
   mockAmendments,
 } from "../lib/mockData";
 
+import type { Amendment } from "../types";
+
+
+
+
 import {
   kamerLayoutNov2023_Nov2025,
   kamerLayoutVanafFeb2026,
@@ -28,6 +33,15 @@ export default function WelcomePage() {
   }, []);
 
   const today = new Date();
+
+const amendments = mockAmendments;
+
+amendments.sort((a, b) => {
+  const dateA = new Date(a.stemDatum ?? 0).getTime();
+  const dateB = new Date(b.stemDatum ?? 0).getTime();
+
+  return dateB - dateA;
+});
 
   const chamberLayout =
     today >= new Date(kamerLayoutVanafFeb2026.startDate)
@@ -102,8 +116,8 @@ const openFeedback = () => {
   const latestAmendments = [...mockAmendments]
     .sort(
       (a, b) =>
-        new Date(b.stemDatum).getTime() -
-        new Date(a.stemDatum).getTime()
+        new Date(b.stemDatum ?? "").getTime() -
+        new Date(a.stemDatum ?? "").getTime()
     )
     .slice(0, 10);
 
@@ -159,8 +173,8 @@ const openFeedback = () => {
   ];
 
   const startVoting = (
-    amendments,
-    quickStartLabel
+    amendments: Amendment[],
+    quickStartLabel: string
   ) => {
     posthog.capture("voting_started", {
       quick_start: quickStartLabel,

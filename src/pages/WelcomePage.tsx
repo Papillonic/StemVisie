@@ -219,28 +219,23 @@ const openFeedback = () => {
 </div>        
  
 	 {/* BRAND */}
-          <h1 className="text-4xl font-bold tracking-tight text-white mb-2 text-center">
-            StemVisie
-          </h1>
+<h1 className="text-4xl font-bold tracking-tight text-white text-center">
+  StemVisie
+</h1>
 
-          {/* BETA LABEL */}
-          <p className="text-white/60 text-sm font-bold text-center mb-4">
-            Beta • Publieke testversie
-          </p>
+<p className="text-white/40 text-[10px] text-center leading-none mb-1">
+  publieke beta
+</p>
 
-          {/* SUBTITLE */}
-          <h2 className="text-xl font-bold text-white text-center mb-4">
-            Welkom
-          </h2>
+<p className="text-white font-bold leading-6 max-w-2xl mb-4 text-center mx-auto">
+  Stem op echte moties uit de Tweede Kamer en vergelijk jouw stemgedrag met politieke partijen.
+</p>
 
-          <p className="text-white font-bold leading-7 max-w-2xl mb-6 mt-2 text-center mx-auto">
-            Stem op echte moties uit de Tweede Kamer en ontdek welke partijen het meest overeenkomen met jouw keuzes.
-          </p>
 
           {/* ⚡ QUICK START */}
-          <div className="w-full flex flex-col items-center space-y-3">
-            <p className="text-white/90 text-sm font-bold uppercase tracking-wide">
-              Snel starten
+          <div className="w-full flex flex-col items-center space-y-2">
+       <p className="text-white/90 text-xs font-bold uppercase tracking-wide">
+       Snel starten
             </p>
 
             <div className="flex justify-center gap-2 overflow-x-auto pb-1 scrollbar-hide max-w-full w-full">
@@ -287,11 +282,21 @@ const openFeedback = () => {
             </div>
           </div>
 
-          <p className="text-white/80 text-xs font-bold leading-relaxed max-w-xl mt-3 text-center mx-auto">
-            Onafhankelijk en niet verbonden aan de Tweede
-            Kamer of politieke partijen. Dit is geen
-            stemadvies.
-          </p>
+          <p className="text-white/60 text-[11px] leading-4 max-w-xl mt-2 text-center mx-auto">
+
+  Onafhankelijk en niet verbonden aan de Tweede Kamer of politieke partijen.
+  Dit is geen stemadvies.
+  <br />
+  <a
+    href="https://papillonicstudios.nl"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:text-white"
+  >
+    Papillonic Studios
+  </a>
+</p>
+
         </GlassCard>
       </div>
 
